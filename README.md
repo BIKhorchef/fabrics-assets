@@ -1,8 +1,29 @@
 # fabrics-assets
 
-Public image host for WooCommerce fabric attribute import.
+Public image host for WooCommerce fabric attribute imports. Files served via the
+jsDelivr CDN. URL pattern:
 
-Files served via jsDelivr CDN:
+```
+https://cdn.jsdelivr.net/gh/BIKhorchef/fabrics-assets@master/<category>/<collection>/<code>.webp
+```
 
-- `https://cdn.jsdelivr.net/gh/<user>/fabrics-assets@main/fabrics/stretch-line/CST-01.webp`
-- `https://cdn.jsdelivr.net/gh/<user>/fabrics-assets@main/fabrics/cotton-blend/44001.webp`
+## Layout
+
+- `chemise-premium/`
+  - `royce-vol-1/`
+  - `royce-vol-2/`
+- `chemise-business/`
+  - `stretch-line/`
+  - `cotton-blend/`
+  - `solemnity/`
+- `costume/`
+  - `massimo-vol-1/`
+  - `massimo-vol-2/`
+  - `massimo-vol-3-jacketing/`
+  - `roberto-bellini-x-series/`
+
+## Cache busting
+
+jsDelivr caches `@master` for ~12 h. To force a refresh after replacing an
+image, request the file with a new query (`?v=2`) or pin to a tagged release
+instead of the branch.
