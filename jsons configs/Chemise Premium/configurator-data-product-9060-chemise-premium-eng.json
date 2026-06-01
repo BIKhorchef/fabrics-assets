@@ -1,0 +1,3981 @@
+{
+  "layers": [
+    {
+      "_id": 12,
+      "name": "Step 1 — Shirt Style",
+      "description": "",
+      "order": 2,
+      "image_order": 12,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "group",
+      "display_mode": "default",
+      "active": false,
+      "parent": 0,
+      "angle_switch": "1",
+      "hide_in_cart": true,
+      "name_en": "Step 1 — Shirt Style",
+      "name_de": "Schritt 1 — Hemdstil"
+    },
+    {
+      "_id": 11,
+      "name": "Collar",
+      "description": "",
+      "order": 3,
+      "image_order": 1,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/01/col-rond-chemise.svg",
+        "id": 6561
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "colors",
+      "active": false,
+      "parent": 12,
+      "choices_number": 7,
+      "angle_switch": "1",
+      "color_swatch_size": "large",
+      "name_en": "Collar",
+      "name_de": "Kragen"
+    },
+    {
+      "_id": 3,
+      "name": "Pocket",
+      "description": "",
+      "order": 4,
+      "image_order": 3,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/01/poignet-mousquetaire-chemise.svg",
+        "id": 6557
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "default",
+      "active": false,
+      "choices_number": 4,
+      "parent": 12,
+      "angle_switch": "1",
+      "name_en": "Pocket",
+      "name_de": "Brusttasche"
+    },
+    {
+      "_id": 2,
+      "name": "Cuffs",
+      "description": "",
+      "order": 5,
+      "image_order": 2,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/01/poignet-simple-chemise.svg",
+        "id": 6558
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "default",
+      "active": false,
+      "choices_number": 6,
+      "parent": 12,
+      "angle_switch": "1",
+      "name_en": "Cuffs",
+      "name_de": "Manschetten"
+    },
+    {
+      "_id": 1,
+      "name": "Front Placket Style",
+      "description": "",
+      "order": 6,
+      "image_order": 0,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/01/gorge-simple-2.svg",
+        "id": 6564
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "colors",
+      "active": false,
+      "choices_number": 4,
+      "parent": 12,
+      "angle_switch": "1",
+      "color_swatch_size": "large",
+      "name_en": "Front Placket Style",
+      "name_de": "Knopfleisten-Stil"
+    },
+    {
+      "_id": 13,
+      "name": "Step 2 — Back Style",
+      "description": "",
+      "order": 10,
+      "image_order": 5,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "group",
+      "display_mode": "default",
+      "active": false,
+      "parent": 0,
+      "angle_switch": "2",
+      "hide_in_cart": true,
+      "name_en": "Step 2 — Back Style",
+      "name_de": "Schritt 2 — Rückenstil"
+    },
+    {
+      "_id": 14,
+      "name": "Back Style",
+      "description": "",
+      "order": 11,
+      "image_order": 13,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "colors",
+      "active": false,
+      "parent": 13,
+      "choices_number": 4,
+      "angle_switch": "2",
+      "color_swatch_size": "large",
+      "name_en": "Back Style",
+      "name_de": "Rückenstil"
+    },
+    {
+      "_id": 15,
+      "name": "Step 3 — Monogram",
+      "description": "",
+      "order": 12,
+      "image_order": 14,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "group",
+      "display_mode": "default",
+      "active": false,
+      "parent": 0,
+      "angle_switch": "1",
+      "hide_in_cart": true,
+      "name_en": "Step 3 — Monogram",
+      "name_de": "Schritt 3 — Monogramm"
+    },
+    {
+      "_id": 21,
+      "name": "Initials",
+      "description": "",
+      "order": 13,
+      "image_order": 18,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/04/extras.png",
+        "id": 7499
+      },
+      "not_a_choice": false,
+      "type": "text-overlay",
+      "display_mode": "default",
+      "active": false,
+      "to_position_options": "[{\"id\": \"pos_bkrnwianz9g\", \"label\": \"On Waist\", \"image_id\": 7949, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/A-la-taille-150x150.png\"}, {\"id\": \"pos_6y9ra6co22e\", \"label\": \"On Cuff\", \"image_id\": 7948, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-le-poignet-150x150.png\"}, {\"id\": \"pos_ban6w4eo34b\", \"label\": \"On Back Collar\", \"image_id\": 7950, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Au-dos-du-col-150x150.png\"}, {\"id\": \"pos_dr9e6ndo3w7\", \"label\": \"On Pocket\", \"image_id\": 7951, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-la-poche-150x150.png\"}]",
+      "parent": 15,
+      "to_colors_label": "Thread Colour",
+      "to_colors": [
+        {
+          "label": "Black",
+          "value": "#000000",
+          "price": 0,
+          "order": 1
+        },
+        {
+          "label": "White",
+          "value": "#FFFFFF",
+          "price": 0,
+          "order": 2
+        },
+        {
+          "label": "Red",
+          "value": "#B03333",
+          "price": 0,
+          "order": 3
+        },
+        {
+          "label": "Yellow",
+          "value": "#DFB948",
+          "price": 0,
+          "order": 4
+        },
+        {
+          "label": "Navy Blue",
+          "value": "#000080",
+          "price": 0,
+          "order": 5
+        },
+        {
+          "label": "Brown",
+          "value": "#98604C",
+          "price": 0,
+          "order": 6
+        },
+        {
+          "label": "Purple",
+          "value": "#70499A",
+          "price": 0,
+          "order": 7
+        }
+      ],
+      "to_fonts_label": "Font",
+      "to_fonts": [
+        {
+          "name": "Bold",
+          "family": "Bold"
+        },
+        {
+          "name": "Italic",
+          "family": "Italic"
+        }
+      ],
+      "to_positions_label": "Monogram Position",
+      "choices_number": 1,
+      "name_en": "Initials",
+      "name_de": "Initialen",
+      "to_colors_en": [
+        {
+          "label": "Black",
+          "value": "#000000",
+          "price": 0,
+          "order": 1
+        },
+        {
+          "label": "White",
+          "value": "#FFFFFF",
+          "price": 0,
+          "order": 2
+        },
+        {
+          "label": "Red",
+          "value": "#B03333",
+          "price": 0,
+          "order": 3
+        },
+        {
+          "label": "Yellow",
+          "value": "#DFB948",
+          "price": 0,
+          "order": 4
+        },
+        {
+          "label": "Navy Blue",
+          "value": "#000080",
+          "price": 0,
+          "order": 5
+        },
+        {
+          "label": "Brown",
+          "value": "#98604C",
+          "price": 0,
+          "order": 6
+        },
+        {
+          "label": "Purple",
+          "value": "#70499A",
+          "price": 0,
+          "order": 7
+        }
+      ],
+      "to_colors_de": [
+        {
+          "label": "Schwarz",
+          "value": "#000000",
+          "price": 0,
+          "order": 1
+        },
+        {
+          "label": "Weiß",
+          "value": "#FFFFFF",
+          "price": 0,
+          "order": 2
+        },
+        {
+          "label": "Rot",
+          "value": "#B03333",
+          "price": 0,
+          "order": 3
+        },
+        {
+          "label": "Gelb",
+          "value": "#DFB948",
+          "price": 0,
+          "order": 4
+        },
+        {
+          "label": "Marineblau",
+          "value": "#000080",
+          "price": 0,
+          "order": 5
+        },
+        {
+          "label": "Braun",
+          "value": "#98604C",
+          "price": 0,
+          "order": 6
+        },
+        {
+          "label": "Violett",
+          "value": "#70499A",
+          "price": 0,
+          "order": 7
+        }
+      ],
+      "to_colors_label_en": "Thread Colour",
+      "to_colors_label_de": "Garnfarbe",
+      "to_position_options_en": "[{\"id\": \"pos_bkrnwianz9g\", \"label\": \"On Waist\", \"image_id\": 7949, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/A-la-taille-150x150.png\"}, {\"id\": \"pos_6y9ra6co22e\", \"label\": \"On Cuff\", \"image_id\": 7948, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-le-poignet-150x150.png\"}, {\"id\": \"pos_ban6w4eo34b\", \"label\": \"On Back Collar\", \"image_id\": 7950, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Au-dos-du-col-150x150.png\"}, {\"id\": \"pos_dr9e6ndo3w7\", \"label\": \"On Pocket\", \"image_id\": 7951, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-la-poche-150x150.png\"}]",
+      "to_position_options_de": "[{\"id\": \"pos_bkrnwianz9g\", \"label\": \"An der Taille\", \"image_id\": 7949, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/A-la-taille-150x150.png\"}, {\"id\": \"pos_6y9ra6co22e\", \"label\": \"Auf der Manschette\", \"image_id\": 7948, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-le-poignet-150x150.png\"}, {\"id\": \"pos_ban6w4eo34b\", \"label\": \"Am Kragenrücken\", \"image_id\": 7950, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Au-dos-du-col-150x150.png\"}, {\"id\": \"pos_dr9e6ndo3w7\", \"label\": \"Auf der Tasche\", \"image_id\": 7951, \"image_url\": \"https://fantinolux.com/wp-content/uploads/2026/04/Sur-la-poche-150x150.png\"}]",
+      "to_font_display": "list"
+    },
+    {
+      "_id": 8,
+      "name": "Step 4 — Fabric Selection",
+      "description": "",
+      "order": 14,
+      "image_order": 9,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "group",
+      "display_mode": "default",
+      "active": false,
+      "parent": 0,
+      "angle_switch": "1",
+      "hide_in_cart": true,
+      "name_en": "Step 4 — Fabric Selection",
+      "name_de": "Schritt 4 — Stoffauswahl"
+    },
+    {
+      "_id": 4,
+      "name": "Fabrics",
+      "description": "",
+      "order": 15,
+      "image_order": 4,
+      "image": {
+        "url": "https://fantinolux.com/wp-content/uploads/2026/01/materials.svg",
+        "id": 6555
+      },
+      "not_a_choice": false,
+      "type": "attribute",
+      "display_mode": "default",
+      "active": false,
+      "attribute_taxonomies": [
+        "pa_royce-vol-1",
+        "pa_royce-vol-2"
+      ],
+      "attribute_taxonomy": "pa_royce-vol-1",
+      "choices_number": 82,
+      "parent": 8,
+      "attribute_swatch_size": "xlarge",
+      "attribute_display_style": "image",
+      "attribute_show_label": false,
+      "name_en": "Fabrics",
+      "name_de": "Stoffe"
+    },
+    {
+      "_id": 9,
+      "name": "Summary",
+      "description": "",
+      "order": 18,
+      "image_order": 10,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "group",
+      "display_mode": "default",
+      "active": false,
+      "parent": 0,
+      "angle_switch": "1",
+      "name_en": "Summary",
+      "name_de": "Zusammenfassung"
+    },
+    {
+      "_id": 10,
+      "name": "Summary",
+      "description": "",
+      "order": 19,
+      "image_order": 11,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "summary",
+      "display_mode": "default",
+      "active": false,
+      "parent": 9,
+      "name_en": "Summary",
+      "name_de": "Zusammenfassung"
+    }
+  ],
+  "angles": [
+    {
+      "_id": 1,
+      "name": "View",
+      "description": "",
+      "order": 1,
+      "image_order": 1,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "default",
+      "active": false,
+      "has_thumbnails": true,
+      "name_en": "View",
+      "name_de": "Ansicht"
+    },
+    {
+      "_id": 2,
+      "name": "Back view",
+      "description": "",
+      "order": 2,
+      "image_order": 2,
+      "image": {
+        "url": "",
+        "id": 0
+      },
+      "not_a_choice": false,
+      "type": "simple",
+      "display_mode": "default",
+      "active": false,
+      "name_en": "Back view",
+      "name_de": "Rückansicht"
+    }
+  ],
+  "content": [
+    {
+      "layerId": 1,
+      "choices": [
+        {
+          "_id": 9,
+          "name": "Classic",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/front-placket-english.png",
+                "id": 7980,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/classic-placket.png",
+                "id": 7971,
+                "dimensions": {
+                  "height": 253,
+                  "width": 194
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 1,
+          "available": true,
+          "order": 9,
+          "active": false,
+          "is_default": false,
+          "name_en": "Classic",
+          "name_de": "Klassisch"
+        },
+        {
+          "_id": 10,
+          "name": "French",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/front-placket-french.png",
+                "id": 7960,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/french-placket.png",
+                "id": 7972,
+                "dimensions": {
+                  "height": 253,
+                  "width": 194
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 1,
+          "available": true,
+          "order": 10,
+          "active": false,
+          "is_default": true,
+          "name_en": "French",
+          "name_de": "Französisch"
+        },
+        {
+          "_id": 11,
+          "name": "English",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/front-placket-hidden.png",
+                "id": 7979,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/hidden-placket.png",
+                "id": 7973,
+                "dimensions": {
+                  "height": 253,
+                  "width": 194
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 1,
+          "available": true,
+          "order": 11,
+          "active": false,
+          "is_default": false,
+          "name_en": "English",
+          "name_de": "Verdeckte Knopfleiste"
+        },
+        {
+          "_id": 12,
+          "name": "Pleated",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/front-placket-toxido-pleated.png",
+                "id": 7961,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/toxido-placket.png",
+                "id": 7974,
+                "dimensions": {
+                  "height": 253,
+                  "width": 194
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 1,
+          "available": true,
+          "order": 12,
+          "active": false,
+          "is_default": false,
+          "name_en": "Pleated",
+          "name_de": "Plissiert (Smoking)"
+        }
+      ]
+    },
+    {
+      "layerId": 2,
+      "choices": [
+        {
+          "_id": 8,
+          "name": "1 Button Round",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/single-button-round-cuff.png",
+                "id": 7130,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/round-cuff.png",
+                "id": 7965,
+                "dimensions": {
+                  "height": 200,
+                  "width": 179
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 6,
+          "active": false,
+          "parent": 0,
+          "name_en": "1 Button Round",
+          "name_de": "1 Knopf – rund"
+        },
+        {
+          "_id": 9,
+          "name": "1 Button Angle",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/Single-button-angle-cuff.png",
+                "id": 7129,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/angle-cuff-.png",
+                "id": 7966,
+                "dimensions": {
+                  "height": 198,
+                  "width": 179
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 7,
+          "active": false,
+          "parent": 0,
+          "name_en": "1 Button Angle",
+          "name_de": "1 Knopf – abgeschrägt"
+        },
+        {
+          "_id": 10,
+          "name": "2 Buttons Round",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/2-button-round-cuff.png",
+                "id": 7126,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/two-button-cuff-.png",
+                "id": 7968,
+                "dimensions": {
+                  "height": 198,
+                  "width": 179
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 8,
+          "active": false,
+          "parent": 0,
+          "name_en": "2 Buttons Round",
+          "name_de": "2 Knöpfe – rund"
+        },
+        {
+          "_id": 11,
+          "name": "2 Buttons Angle",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/double-buttons-angle-cuff.png",
+                "id": 7127,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/two-button-cuff-angle.png",
+                "id": 7969,
+                "dimensions": {
+                  "height": 198,
+                  "width": 178
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 9,
+          "active": false,
+          "parent": 0,
+          "name_en": "2 Buttons Angle",
+          "name_de": "2 Knöpfe – abgeschrägt"
+        },
+        {
+          "_id": 12,
+          "name": "French Round",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/single-buttonhole-french-double-cuff-rounded.png",
+                "id": 7131,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/round-cuff-1.png",
+                "id": 7970,
+                "dimensions": {
+                  "height": 200,
+                  "width": 179
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 10,
+          "active": false,
+          "parent": 0,
+          "name_en": "French Round",
+          "name_de": "Umschlagmanschette – rund"
+        },
+        {
+          "_id": 13,
+          "name": "French Angle",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/french-double-cuff-angle.png",
+                "id": 7128,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/angle-cuff-.png",
+                "id": 7966,
+                "dimensions": {
+                  "height": 198,
+                  "width": 179
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 2,
+          "available": true,
+          "order": 11,
+          "active": false,
+          "parent": 0,
+          "name_en": "French Angle",
+          "name_de": "Umschlagmanschette – abgeschrägt"
+        }
+      ]
+    },
+    {
+      "layerId": 3,
+      "choices": [
+        {
+          "_id": 5,
+          "name": "Angle",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/angle-pocket-style.png",
+                "id": 7132,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/engle-pocket.png",
+                "id": 7967,
+                "dimensions": {
+                  "height": 189,
+                  "width": 176
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 3,
+          "available": true,
+          "order": 5,
+          "active": false,
+          "name_en": "Angle",
+          "name_de": "Abgeschrägt"
+        },
+        {
+          "_id": 6,
+          "name": "Pointed",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/pointed-pocket.png",
+                "id": 7133,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/pointed-pocket-1.png",
+                "id": 7964,
+                "dimensions": {
+                  "height": 192,
+                  "width": 180
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 3,
+          "available": true,
+          "order": 6,
+          "active": false,
+          "name_en": "Pointed",
+          "name_de": "Spitz"
+        },
+        {
+          "_id": 7,
+          "name": "Rounded",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/round-pocket.png",
+                "id": 7154,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/round-pocket-2.png",
+                "id": 7963,
+                "dimensions": {
+                  "height": 189,
+                  "width": 178
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 3,
+          "available": true,
+          "order": 7,
+          "active": false,
+          "name_en": "Rounded",
+          "name_de": "Abgerundet"
+        },
+        {
+          "_id": 8,
+          "name": "No Pocket",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 0,
+                "url": "",
+                "dimensions": ""
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/icon-sans-poche.png",
+                "id": 9344,
+                "dimensions": {
+                  "height": 500,
+                  "width": 500
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 3,
+          "available": true,
+          "order": 8,
+          "active": false
+        }
+      ]
+    },
+    {
+      "layerId": 4,
+      "choices": [
+        {
+          "_id": 850000,
+          "name": "ROYCE VOL 1",
+          "description": "",
+          "images": [],
+          "layerId": 4,
+          "available": false,
+          "is_group": true,
+          "order": 0,
+          "is_attribute_term": false,
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "active": false,
+          "choice_groups_toggle": "enabled"
+        },
+        {
+          "_id": 900882,
+          "name": "S50101",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8647,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50101.webp"
+              },
+              "thumbnail": {
+                "id": 8647,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50101-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": true,
+          "active": false,
+          "order": 1,
+          "is_attribute_term": true,
+          "term_id": 882,
+          "term_slug": "s50101",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900884,
+          "name": "S50102",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8648,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50102.webp"
+              },
+              "thumbnail": {
+                "id": 8648,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50102-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 2,
+          "is_attribute_term": true,
+          "term_id": 884,
+          "term_slug": "s50102",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900886,
+          "name": "S50103",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8649,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50103.webp"
+              },
+              "thumbnail": {
+                "id": 8649,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50103-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 3,
+          "is_attribute_term": true,
+          "term_id": 886,
+          "term_slug": "s50103",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900888,
+          "name": "S50104",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8650,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50104.webp"
+              },
+              "thumbnail": {
+                "id": 8650,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50104-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 4,
+          "is_attribute_term": true,
+          "term_id": 888,
+          "term_slug": "s50104",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900890,
+          "name": "S50105",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8651,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50105.webp"
+              },
+              "thumbnail": {
+                "id": 8651,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50105-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 5,
+          "is_attribute_term": true,
+          "term_id": 890,
+          "term_slug": "s50105",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900892,
+          "name": "S50106",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8652,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50106.webp"
+              },
+              "thumbnail": {
+                "id": 8652,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50106-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 6,
+          "is_attribute_term": true,
+          "term_id": 892,
+          "term_slug": "s50106",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900894,
+          "name": "S50107",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8653,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50107.webp"
+              },
+              "thumbnail": {
+                "id": 8653,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50107-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 7,
+          "is_attribute_term": true,
+          "term_id": 894,
+          "term_slug": "s50107",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900896,
+          "name": "S50108",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8654,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50108.webp"
+              },
+              "thumbnail": {
+                "id": 8654,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50108-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 8,
+          "is_attribute_term": true,
+          "term_id": 896,
+          "term_slug": "s50108",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900898,
+          "name": "S50109",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8655,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50109.webp"
+              },
+              "thumbnail": {
+                "id": 8655,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50109-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 9,
+          "is_attribute_term": true,
+          "term_id": 898,
+          "term_slug": "s50109",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900900,
+          "name": "S50110",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8656,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50110.webp"
+              },
+              "thumbnail": {
+                "id": 8656,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50110-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 10,
+          "is_attribute_term": true,
+          "term_id": 900,
+          "term_slug": "s50110",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900902,
+          "name": "S50111",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8657,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50111.webp"
+              },
+              "thumbnail": {
+                "id": 8657,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50111-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 11,
+          "is_attribute_term": true,
+          "term_id": 902,
+          "term_slug": "s50111",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900904,
+          "name": "S50112",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8658,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50112.webp"
+              },
+              "thumbnail": {
+                "id": 8658,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50112-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 12,
+          "is_attribute_term": true,
+          "term_id": 904,
+          "term_slug": "s50112",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900906,
+          "name": "S50113",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8659,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50113.webp"
+              },
+              "thumbnail": {
+                "id": 8659,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50113-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 13,
+          "is_attribute_term": true,
+          "term_id": 906,
+          "term_slug": "s50113",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900908,
+          "name": "S50114",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8660,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50114.webp"
+              },
+              "thumbnail": {
+                "id": 8660,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50114-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 14,
+          "is_attribute_term": true,
+          "term_id": 908,
+          "term_slug": "s50114",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900910,
+          "name": "S50115",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8661,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50115.webp"
+              },
+              "thumbnail": {
+                "id": 8661,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50115-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 15,
+          "is_attribute_term": true,
+          "term_id": 910,
+          "term_slug": "s50115",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900912,
+          "name": "S50116",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8662,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50116.webp"
+              },
+              "thumbnail": {
+                "id": 8662,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S50116-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 16,
+          "is_attribute_term": true,
+          "term_id": 912,
+          "term_slug": "s50116",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900914,
+          "name": "S50117",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7290,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50117.png"
+              },
+              "thumbnail": {
+                "id": 7290,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50117-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 17,
+          "is_attribute_term": true,
+          "term_id": 914,
+          "term_slug": "s50117",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900916,
+          "name": "S50118",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7291,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50118.png"
+              },
+              "thumbnail": {
+                "id": 7291,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50118-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 18,
+          "is_attribute_term": true,
+          "term_id": 916,
+          "term_slug": "s50118",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900918,
+          "name": "S50119",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7292,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50119.png"
+              },
+              "thumbnail": {
+                "id": 7292,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S50119-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 19,
+          "is_attribute_term": true,
+          "term_id": 918,
+          "term_slug": "s50119",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900920,
+          "name": "S6301",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7266,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6301.png"
+              },
+              "thumbnail": {
+                "id": 7266,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6301-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 20,
+          "is_attribute_term": true,
+          "term_id": 920,
+          "term_slug": "s6301",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900922,
+          "name": "S6303",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7267,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6303.png"
+              },
+              "thumbnail": {
+                "id": 7267,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6303-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 21,
+          "is_attribute_term": true,
+          "term_id": 922,
+          "term_slug": "s6303",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900924,
+          "name": "S6306",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7268,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6306.png"
+              },
+              "thumbnail": {
+                "id": 7268,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6306-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 22,
+          "is_attribute_term": true,
+          "term_id": 924,
+          "term_slug": "s6306",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900926,
+          "name": "S6307",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7269,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6307.png"
+              },
+              "thumbnail": {
+                "id": 7269,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6307-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 23,
+          "is_attribute_term": true,
+          "term_id": 926,
+          "term_slug": "s6307",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900928,
+          "name": "S6308",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7270,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6308.png"
+              },
+              "thumbnail": {
+                "id": 7270,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6308-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 24,
+          "is_attribute_term": true,
+          "term_id": 928,
+          "term_slug": "s6308",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900930,
+          "name": "S6309",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7271,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6309.png"
+              },
+              "thumbnail": {
+                "id": 7271,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6309-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 25,
+          "is_attribute_term": true,
+          "term_id": 930,
+          "term_slug": "s6309",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900932,
+          "name": "S6310",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7272,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6310.png"
+              },
+              "thumbnail": {
+                "id": 7272,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6310-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 26,
+          "is_attribute_term": true,
+          "term_id": 932,
+          "term_slug": "s6310",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900934,
+          "name": "S6311",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7273,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6311.png"
+              },
+              "thumbnail": {
+                "id": 7273,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6311-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 27,
+          "is_attribute_term": true,
+          "term_id": 934,
+          "term_slug": "s6311",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900936,
+          "name": "S6312",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7274,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6312.png"
+              },
+              "thumbnail": {
+                "id": 7274,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6312-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 28,
+          "is_attribute_term": true,
+          "term_id": 936,
+          "term_slug": "s6312",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900938,
+          "name": "S6313",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7275,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6313.png"
+              },
+              "thumbnail": {
+                "id": 7275,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6313-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 29,
+          "is_attribute_term": true,
+          "term_id": 938,
+          "term_slug": "s6313",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900940,
+          "name": "S6314",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7276,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6314.png"
+              },
+              "thumbnail": {
+                "id": 7276,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6314-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 30,
+          "is_attribute_term": true,
+          "term_id": 940,
+          "term_slug": "s6314",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900942,
+          "name": "S6315",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7277,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6315.png"
+              },
+              "thumbnail": {
+                "id": 7277,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6315-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 31,
+          "is_attribute_term": true,
+          "term_id": 942,
+          "term_slug": "s6315",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900944,
+          "name": "S6316",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8663,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S6316.webp"
+              },
+              "thumbnail": {
+                "id": 8663,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S6316-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 32,
+          "is_attribute_term": true,
+          "term_id": 944,
+          "term_slug": "s6316",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900946,
+          "name": "S8999-1",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8664,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-1.webp"
+              },
+              "thumbnail": {
+                "id": 8664,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-1-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 33,
+          "is_attribute_term": true,
+          "term_id": 946,
+          "term_slug": "s8999-1",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900948,
+          "name": "S8999-2",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8665,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-2.webp"
+              },
+              "thumbnail": {
+                "id": 8665,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-2-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 34,
+          "is_attribute_term": true,
+          "term_id": 948,
+          "term_slug": "s8999-2",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900950,
+          "name": "S8999-3",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8666,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-3.webp"
+              },
+              "thumbnail": {
+                "id": 8666,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-3-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 35,
+          "is_attribute_term": true,
+          "term_id": 950,
+          "term_slug": "s8999-3",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900952,
+          "name": "S8999-4",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8667,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-4.webp"
+              },
+              "thumbnail": {
+                "id": 8667,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-4-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 36,
+          "is_attribute_term": true,
+          "term_id": 952,
+          "term_slug": "s8999-4",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900954,
+          "name": "S8999-5",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8668,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-5.webp"
+              },
+              "thumbnail": {
+                "id": 8668,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-5-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 37,
+          "is_attribute_term": true,
+          "term_id": 954,
+          "term_slug": "s8999-5",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900956,
+          "name": "S8999-6",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8669,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-6.webp"
+              },
+              "thumbnail": {
+                "id": 8669,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-6-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 38,
+          "is_attribute_term": true,
+          "term_id": 956,
+          "term_slug": "s8999-6",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900958,
+          "name": "S8999-7",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8670,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-7.webp"
+              },
+              "thumbnail": {
+                "id": 8670,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-7-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 39,
+          "is_attribute_term": true,
+          "term_id": 958,
+          "term_slug": "s8999-7",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900960,
+          "name": "S8999-8",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 8671,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-8.webp"
+              },
+              "thumbnail": {
+                "id": 8671,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/05/fabric-S8999-8-150x150.webp"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 40,
+          "is_attribute_term": true,
+          "term_id": 960,
+          "term_slug": "s8999-8",
+          "taxonomy": "pa_royce-vol-1",
+          "group": "pa_royce-vol-1",
+          "group_label": "ROYCE VOL 1",
+          "group_order": 0,
+          "parent": 850000,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 850001,
+          "name": "ROYCE VOL 2",
+          "description": "",
+          "images": [],
+          "layerId": 4,
+          "available": false,
+          "is_group": true,
+          "order": 1000,
+          "is_attribute_term": false,
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "active": false,
+          "choice_groups_toggle": "enabled"
+        },
+        {
+          "_id": 900962,
+          "name": "S6123",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7603,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6123.png"
+              },
+              "thumbnail": {
+                "id": 7603,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6123-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1001,
+          "is_attribute_term": true,
+          "term_id": 962,
+          "term_slug": "s6123",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900964,
+          "name": "S6124",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7604,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6124.png"
+              },
+              "thumbnail": {
+                "id": 7604,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6124-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1002,
+          "is_attribute_term": true,
+          "term_id": 964,
+          "term_slug": "s6124",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900966,
+          "name": "S6125",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7605,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6125.png"
+              },
+              "thumbnail": {
+                "id": 7605,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6125-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1003,
+          "is_attribute_term": true,
+          "term_id": 966,
+          "term_slug": "s6125",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900968,
+          "name": "S6126",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7606,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6126.png"
+              },
+              "thumbnail": {
+                "id": 7606,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6126-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1004,
+          "is_attribute_term": true,
+          "term_id": 968,
+          "term_slug": "s6126",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900970,
+          "name": "S6127",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7607,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6127.png"
+              },
+              "thumbnail": {
+                "id": 7607,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6127-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1005,
+          "is_attribute_term": true,
+          "term_id": 970,
+          "term_slug": "s6127",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900972,
+          "name": "S6128",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7608,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6128.png"
+              },
+              "thumbnail": {
+                "id": 7608,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6128-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1006,
+          "is_attribute_term": true,
+          "term_id": 972,
+          "term_slug": "s6128",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900974,
+          "name": "S6129",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7609,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6129.png"
+              },
+              "thumbnail": {
+                "id": 7609,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6129-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1007,
+          "is_attribute_term": true,
+          "term_id": 974,
+          "term_slug": "s6129",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900976,
+          "name": "S6130",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7610,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6130.png"
+              },
+              "thumbnail": {
+                "id": 7610,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6130-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1008,
+          "is_attribute_term": true,
+          "term_id": 976,
+          "term_slug": "s6130",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900978,
+          "name": "S6131",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7611,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6131.png"
+              },
+              "thumbnail": {
+                "id": 7611,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6131-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1009,
+          "is_attribute_term": true,
+          "term_id": 978,
+          "term_slug": "s6131",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900980,
+          "name": "S6132",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7612,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6132.png"
+              },
+              "thumbnail": {
+                "id": 7612,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6132-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1010,
+          "is_attribute_term": true,
+          "term_id": 980,
+          "term_slug": "s6132",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900982,
+          "name": "S6133",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7613,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6133.png"
+              },
+              "thumbnail": {
+                "id": 7613,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6133-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1011,
+          "is_attribute_term": true,
+          "term_id": 982,
+          "term_slug": "s6133",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900984,
+          "name": "S6134",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7614,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6134.png"
+              },
+              "thumbnail": {
+                "id": 7614,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6134-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1012,
+          "is_attribute_term": true,
+          "term_id": 984,
+          "term_slug": "s6134",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900986,
+          "name": "S6135",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7615,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6135.png"
+              },
+              "thumbnail": {
+                "id": 7615,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6135-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1013,
+          "is_attribute_term": true,
+          "term_id": 986,
+          "term_slug": "s6135",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900988,
+          "name": "S6136",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7616,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6136.png"
+              },
+              "thumbnail": {
+                "id": 7616,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6136-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1014,
+          "is_attribute_term": true,
+          "term_id": 988,
+          "term_slug": "s6136",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900990,
+          "name": "S6137",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7617,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6137.png"
+              },
+              "thumbnail": {
+                "id": 7617,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6137-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1015,
+          "is_attribute_term": true,
+          "term_id": 990,
+          "term_slug": "s6137",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900992,
+          "name": "S6138",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7618,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6138.png"
+              },
+              "thumbnail": {
+                "id": 7618,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6138-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1016,
+          "is_attribute_term": true,
+          "term_id": 992,
+          "term_slug": "s6138",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900994,
+          "name": "S6139",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7619,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6139.png"
+              },
+              "thumbnail": {
+                "id": 7619,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6139-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1017,
+          "is_attribute_term": true,
+          "term_id": 994,
+          "term_slug": "s6139",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900996,
+          "name": "S6140",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7620,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6140.png"
+              },
+              "thumbnail": {
+                "id": 7620,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6140-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1018,
+          "is_attribute_term": true,
+          "term_id": 996,
+          "term_slug": "s6140",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 900998,
+          "name": "S6141",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7621,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6141.png"
+              },
+              "thumbnail": {
+                "id": 7621,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6141-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1019,
+          "is_attribute_term": true,
+          "term_id": 998,
+          "term_slug": "s6141",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901000,
+          "name": "S6142",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7622,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6142.png"
+              },
+              "thumbnail": {
+                "id": 7622,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6142-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1020,
+          "is_attribute_term": true,
+          "term_id": 1000,
+          "term_slug": "s6142",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901002,
+          "name": "S6143",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7623,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6143.png"
+              },
+              "thumbnail": {
+                "id": 7623,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6143-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1021,
+          "is_attribute_term": true,
+          "term_id": 1002,
+          "term_slug": "s6143",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901004,
+          "name": "S6144",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7624,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6144.png"
+              },
+              "thumbnail": {
+                "id": 7624,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6144-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1022,
+          "is_attribute_term": true,
+          "term_id": 1004,
+          "term_slug": "s6144",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901006,
+          "name": "S6145",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7625,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6145.png"
+              },
+              "thumbnail": {
+                "id": 7625,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6145-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1023,
+          "is_attribute_term": true,
+          "term_id": 1006,
+          "term_slug": "s6145",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901008,
+          "name": "S6146",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7626,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6146.png"
+              },
+              "thumbnail": {
+                "id": 7626,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6146-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1024,
+          "is_attribute_term": true,
+          "term_id": 1008,
+          "term_slug": "s6146",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901010,
+          "name": "S6147",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7627,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6147.png"
+              },
+              "thumbnail": {
+                "id": 7627,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6147-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1025,
+          "is_attribute_term": true,
+          "term_id": 1010,
+          "term_slug": "s6147",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901012,
+          "name": "S6148",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7628,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6148.png"
+              },
+              "thumbnail": {
+                "id": 7628,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6148-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1026,
+          "is_attribute_term": true,
+          "term_id": 1012,
+          "term_slug": "s6148",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901014,
+          "name": "S6149",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7629,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6149.png"
+              },
+              "thumbnail": {
+                "id": 7629,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6149-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1027,
+          "is_attribute_term": true,
+          "term_id": 1014,
+          "term_slug": "s6149",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901016,
+          "name": "S6150",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7630,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6150.png"
+              },
+              "thumbnail": {
+                "id": 7630,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6150-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1028,
+          "is_attribute_term": true,
+          "term_id": 1016,
+          "term_slug": "s6150",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901018,
+          "name": "S6151",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7631,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6151.png"
+              },
+              "thumbnail": {
+                "id": 7631,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6151-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1029,
+          "is_attribute_term": true,
+          "term_id": 1018,
+          "term_slug": "s6151",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901020,
+          "name": "S6152",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7632,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6152.png"
+              },
+              "thumbnail": {
+                "id": 7632,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6152-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1030,
+          "is_attribute_term": true,
+          "term_id": 1020,
+          "term_slug": "s6152",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901022,
+          "name": "S6177",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7633,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6177.png"
+              },
+              "thumbnail": {
+                "id": 7633,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6177-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1031,
+          "is_attribute_term": true,
+          "term_id": 1022,
+          "term_slug": "s6177",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901024,
+          "name": "S6197",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7634,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6197.png"
+              },
+              "thumbnail": {
+                "id": 7634,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6197-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1032,
+          "is_attribute_term": true,
+          "term_id": 1024,
+          "term_slug": "s6197",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901026,
+          "name": "S6198",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7635,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6198.png"
+              },
+              "thumbnail": {
+                "id": 7635,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6198-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1033,
+          "is_attribute_term": true,
+          "term_id": 1026,
+          "term_slug": "s6198",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901028,
+          "name": "S6223",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7636,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6223.png"
+              },
+              "thumbnail": {
+                "id": 7636,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6223-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1034,
+          "is_attribute_term": true,
+          "term_id": 1028,
+          "term_slug": "s6223",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901030,
+          "name": "S6241",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7637,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6241.png"
+              },
+              "thumbnail": {
+                "id": 7637,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6241-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1035,
+          "is_attribute_term": true,
+          "term_id": 1030,
+          "term_slug": "s6241",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901032,
+          "name": "S6292",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7638,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6292.png"
+              },
+              "thumbnail": {
+                "id": 7638,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6292-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1036,
+          "is_attribute_term": true,
+          "term_id": 1032,
+          "term_slug": "s6292",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901034,
+          "name": "S6330",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7639,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6330.png"
+              },
+              "thumbnail": {
+                "id": 7639,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6330-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1037,
+          "is_attribute_term": true,
+          "term_id": 1034,
+          "term_slug": "s6330",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901036,
+          "name": "S6331",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7640,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6331.png"
+              },
+              "thumbnail": {
+                "id": 7640,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6331-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1038,
+          "is_attribute_term": true,
+          "term_id": 1036,
+          "term_slug": "s6331",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901038,
+          "name": "S6332",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7641,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6332.png"
+              },
+              "thumbnail": {
+                "id": 7641,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6332-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1039,
+          "is_attribute_term": true,
+          "term_id": 1038,
+          "term_slug": "s6332",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        },
+        {
+          "_id": 901040,
+          "name": "S6333",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "id": 7642,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6333.png"
+              },
+              "thumbnail": {
+                "id": 7642,
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/fabric-S6333-150x150.png"
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 4,
+          "available": true,
+          "is_default": false,
+          "active": false,
+          "order": 1040,
+          "is_attribute_term": true,
+          "term_id": 1040,
+          "term_slug": "s6333",
+          "taxonomy": "pa_royce-vol-2",
+          "group": "pa_royce-vol-2",
+          "group_label": "ROYCE VOL 2",
+          "group_order": 1,
+          "parent": 850001,
+          "has_thumbnail": "1"
+        }
+      ]
+    },
+    {
+      "layerId": 11,
+      "choices": [
+        {
+          "_id": 5,
+          "name": "Chinese Collar",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/chinese-mao-collar.png",
+                "id": 7959,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/chinese.png",
+                "id": 7861,
+                "dimensions": {
+                  "height": 220,
+                  "width": 206
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 0,
+          "active": false,
+          "parent": 0,
+          "name_en": "Chinese Collar",
+          "name_de": "Mao-Kragen"
+        },
+        {
+          "_id": 1,
+          "name": "English Collar",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_eng.png",
+                "id": 7988,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/english-collar.png",
+                "id": 7855,
+                "dimensions": {
+                  "height": 211,
+                  "width": 195
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 1,
+          "active": false,
+          "parent": 0,
+          "name_en": "English Collar",
+          "name_de": "Englischer Kragen"
+        },
+        {
+          "_id": 2,
+          "name": "French Collar",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_6.png",
+                "id": 7986,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/french-collar.png",
+                "id": 7859,
+                "dimensions": {
+                  "height": 210,
+                  "width": 197
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 2,
+          "active": false,
+          "parent": 0,
+          "name_en": "French Collar",
+          "name_de": "Haifischkragen"
+        },
+        {
+          "_id": 3,
+          "name": "Button Down",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_btun.png",
+                "id": 7990,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/down-buttons-collar.png",
+                "id": 7856,
+                "dimensions": {
+                  "height": 220,
+                  "width": 206
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 3,
+          "active": false,
+          "parent": 0,
+          "name_en": "Button Down",
+          "name_de": "Button-Down-Kragen"
+        },
+        {
+          "_id": 4,
+          "name": "Italian Collar",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_6.png",
+                "id": 7986,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/italian-collar.png",
+                "id": 7860,
+                "dimensions": {
+                  "height": 212,
+                  "width": 207
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 4,
+          "active": false,
+          "parent": 0,
+          "name_en": "Italian Collar",
+          "name_de": "Italienischer Kragen"
+        },
+        {
+          "_id": 6,
+          "name": "Hidden Button Down",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_5.png",
+                "id": 7987,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/hidden-buttons-collar.png",
+                "id": 7857,
+                "dimensions": {
+                  "height": 218,
+                  "width": 206
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 5,
+          "active": false,
+          "parent": 0,
+          "name_en": "Hidden Button Down",
+          "name_de": "Verdeckter Button-Down"
+        },
+        {
+          "_id": 7,
+          "name": "Wingtip",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/collars_wg.png",
+                "id": 7985,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/wing-tip.png",
+                "id": 7858,
+                "dimensions": {
+                  "height": 205,
+                  "width": 198
+                }
+              },
+              "angleId": 1
+            }
+          ],
+          "layerId": 11,
+          "available": true,
+          "order": 6,
+          "active": false,
+          "parent": 0,
+          "name_en": "Wingtip",
+          "name_de": "Kläppchenkragen"
+        }
+      ]
+    },
+    {
+      "layerId": 14,
+      "choices": [
+        {
+          "_id": 5,
+          "name": "Plain",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "",
+                "id": 0,
+                "dimensions": {
+                  "height": 0,
+                  "width": 0
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/plain-.png",
+                "id": 7994,
+                "dimensions": {
+                  "height": 254,
+                  "width": 231
+                }
+              },
+              "angleId": 1
+            },
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/plain-.jpg",
+                "id": 7862,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "id": 0,
+                "url": ""
+              },
+              "angleId": 2
+            }
+          ],
+          "layerId": 14,
+          "available": true,
+          "order": 5,
+          "active": false,
+          "angle_switch": "2",
+          "name_en": "Plain",
+          "name_de": "Glatt"
+        },
+        {
+          "_id": 6,
+          "name": "Side Pleats",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "",
+                "id": 0,
+                "dimensions": {
+                  "height": 0,
+                  "width": 0
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/side-pleats.png",
+                "id": 7993,
+                "dimensions": {
+                  "height": 254,
+                  "width": 242
+                }
+              },
+              "angleId": 1
+            },
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/side-pleats.jpg",
+                "id": 7863,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "id": 0,
+                "url": ""
+              },
+              "angleId": 2
+            }
+          ],
+          "layerId": 14,
+          "available": true,
+          "order": 6,
+          "active": false,
+          "angle_switch": "2",
+          "name_en": "Side Pleats",
+          "name_de": "Seitenfalten"
+        },
+        {
+          "_id": 7,
+          "name": "Center Pleats",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "",
+                "id": 0,
+                "dimensions": {
+                  "height": 0,
+                  "width": 0
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/center-pleats.png",
+                "id": 7992,
+                "dimensions": {
+                  "height": 254,
+                  "width": 259
+                }
+              },
+              "angleId": 1
+            },
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/center-pleats.jpg",
+                "id": 7864,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "id": 0,
+                "url": ""
+              },
+              "angleId": 2
+            }
+          ],
+          "layerId": 14,
+          "available": true,
+          "order": 7,
+          "active": false,
+          "angle_switch": "2",
+          "name_en": "Center Pleats",
+          "name_de": "Mittelfalte"
+        },
+        {
+          "_id": 8,
+          "name": "Darts",
+          "description": "",
+          "images": [
+            {
+              "image": {
+                "url": "",
+                "id": 0,
+                "dimensions": {
+                  "height": 0,
+                  "width": 0
+                }
+              },
+              "thumbnail": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/darts.png",
+                "id": 7991,
+                "dimensions": {
+                  "height": 254,
+                  "width": 251
+                }
+              },
+              "angleId": 1
+            },
+            {
+              "image": {
+                "url": "https://fantinolux.com/wp-content/uploads/2026/04/darts.jpg",
+                "id": 7865,
+                "dimensions": {
+                  "height": 1264,
+                  "width": 843
+                }
+              },
+              "thumbnail": {
+                "id": 0,
+                "url": ""
+              },
+              "angleId": 2
+            }
+          ],
+          "layerId": 14,
+          "available": true,
+          "order": 8,
+          "active": false,
+          "angle_switch": "2",
+          "name_en": "Darts",
+          "name_de": "Rückenabnäher"
+        }
+      ]
+    },
+    {
+      "layerId": 21,
+      "choices": [
+        {
+          "_id": 1,
+          "name": "Add initials",
+          "description": "",
+          "images": [],
+          "layerId": 21,
+          "available": true,
+          "order": 1,
+          "active": false,
+          "to_default_text": "",
+          "to_max_chars": 30,
+          "to_placeholder": "Your initials",
+          "name_en": "Add initials",
+          "name_de": "Initialen hinzufügen"
+        }
+      ]
+    }
+  ],
+  "conditions": []
+}
