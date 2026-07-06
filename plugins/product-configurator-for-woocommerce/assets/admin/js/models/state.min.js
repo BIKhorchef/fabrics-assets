@@ -1,0 +1,1 @@
+var PC=PC||{};PC.model=PC.model||{},PC.state=Backbone.Model.extend({defaults:{label:"",title:"",menu_id:"",description:!1,type:"part",active:!1},initialize:function(){}});

@@ -1,0 +1,570 @@
+/* ──────────────────────────────────────────────────────────────────────────
+   Pack product page — slot cards with chip variant selector
+   ────────────────────────────────────────────────────────────────────────── */
+
+.mkl-pc-pack {
+	margin: 1.5em 0;
+}
+
+.mkl-pc-pack-slots {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	gap: 16px;
+	margin-bottom: 20px;
+}
+
+/* ─── Slot card (one per slot, always — variant-aware via chips) ─── */
+
+.mkl-pc-pack-slot-card {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	padding: 16px;
+	background: #fff;
+	transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.mkl-pc-pack-slot-card[data-status="done"] {
+	border-color: #8b6f47;
+	box-shadow: 0 0 0 1px #8b6f47 inset;
+}
+
+.mkl-pc-pack-slot-title {
+	margin: 0 0 10px;
+	font-size: 1.05em;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+
+/* ─── Variant chips ─── */
+
+.mkl-pc-pack-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-bottom: 12px;
+}
+
+.mkl-pc-pack-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	padding: 5px 10px 5px 8px;
+	border: 1px solid #d0d0d0;
+	border-radius: 999px;
+	background: #fff;
+	color: #444;
+	font-size: .85em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: border-color .15s ease, background .15s ease, color .15s ease;
+	line-height: 1.3;
+}
+
+.mkl-pc-pack-chip:hover {
+	border-color: #c4a36b;
+	color: #5d4a30;
+}
+
+.mkl-pc-pack-chip.is-selected {
+	background: #8b6f47;
+	border-color: #8b6f47;
+	color: #fff;
+}
+
+.mkl-pc-pack-chip-mark {
+	font-weight: 700;
+	font-size: 1.05em;
+	line-height: 1;
+}
+
+.mkl-pc-pack-chip.is-selected .mkl-pc-pack-chip-mark {
+	/* Switch the "+" to a check on selected for clarity. */
+	font-size: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: #fff;
+	position: relative;
+}
+.mkl-pc-pack-chip.is-selected .mkl-pc-pack-chip-mark::after {
+	content: '✓';
+	color: #8b6f47;
+	font-size: 10px;
+	font-weight: 700;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mkl-pc-pack-chip-price {
+	font-size: .85em;
+	opacity: .8;
+}
+
+.mkl-pc-pack-chip.is-selected .mkl-pc-pack-chip-price {
+	opacity: 1;
+}
+
+/* ─── Card body (image + info + button) ─── */
+
+.mkl-pc-pack-card-body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.mkl-pc-pack-card-media {
+	text-align: center;
+	margin-bottom: 12px;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #fafafa;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.mkl-pc-pack-card-img {
+	max-width: 100%;
+	max-height: 160px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+.mkl-pc-pack-card-img--empty {
+	width: 100%;
+	height: 160px;
+	background: #f5f5f5;
+}
+
+.mkl-pc-pack-card-info {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+}
+
+.mkl-pc-pack-card-name {
+	margin: 0 0 6px;
+	font-size: .95em;
+	font-weight: 500;
+	color: #333;
+}
+
+.mkl-pc-pack-card-status {
+	margin: 0 0 10px;
+	font-size: .88em;
+	color: #777;
+}
+
+.mkl-pc-pack-slot-card[data-status="done"] .mkl-pc-pack-card-status {
+	color: #5d4a30;
+	font-weight: 600;
+}
+
+.mkl-pc-pack-configure-btn {
+	margin-top: 4px;
+}
+
+/* ─── Pack footer (total + add-to-cart) ─── */
+
+.mkl-pc-pack-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	padding-top: 12px;
+	border-top: 1px solid #e0e0e0;
+}
+
+.mkl-pc-pack-total-label {
+	color: #555;
+	margin-right: 6px;
+}
+
+.mkl-pc-pack-total-value {
+	font-size: 1.4em;
+	font-weight: 700;
+	color: #1a1a1a;
+}
+
+.mkl-pc-pack-submit {
+	min-width: 220px;
+	transition: background-color .15s ease, color .15s ease, opacity .15s ease;
+}
+
+/* Aggressive disabled override — ecomus (and many other themes) paint button.alt
+   with their brand colour with !important and ignore [disabled]. We layer three
+   defences:
+     1. The [disabled] attribute selector
+     2. The :disabled pseudo-class
+     3. An is-disabled class added by JS (highest leverage when the theme strips
+        the disabled attribute or uses inline styles)
+   `pointer-events:none` ensures clicks don't fire even if the button somehow
+   appears clickable.  Body scope (.mkl-pc-pack-page) raises specificity above
+   most theme rules. */
+body.mkl-pc-pack-page .mkl-pc-pack-submit[disabled],
+body.mkl-pc-pack-page .mkl-pc-pack-submit:disabled,
+body.mkl-pc-pack-page .mkl-pc-pack-submit.is-disabled,
+.mkl-pc-pack-form .mkl-pc-pack-submit[disabled],
+.mkl-pc-pack-form .mkl-pc-pack-submit:disabled,
+.mkl-pc-pack-form .mkl-pc-pack-submit.is-disabled {
+	background-color: #cfcfcf !important;
+	background-image: none !important;
+	background: #cfcfcf !important;
+	color: #6e6e6e !important;
+	border-color: #bdbdbd !important;
+	opacity: .7 !important;
+	cursor: not-allowed !important;
+	pointer-events: none !important;
+	box-shadow: none !important;
+}
+
+/* ─── Suppress theme's stand-alone add-to-cart ONLY on pack pages ───────────
+   These selectors are scoped to body.mkl-pc-pack-page (added by PHP
+   add_body_class on the pack product page). Without the scope they would
+   hide regular configurable products on every other product page on the
+   site whenever pack.css happens to be loaded. */
+body.mkl-pc-pack-page form.cart:not(.mkl-pc-pack-form),
+body.mkl-pc-pack-page .product-quantity-action,
+body.mkl-pc-pack-page .product-info .product-form,
+body.mkl-pc-pack-page .tf-product-info-buy-button:not(.mkl-pc-pack-keep) {
+	display: none !important;
+}
+
+/* ─── Hide standalone product price chrome inside MKL modal opened from pack ─── */
+
+body.mkl-pc-pack-modal-active .pc-total-price,
+body.mkl-pc-pack-modal-active .pc-total--regular-price,
+body.mkl-pc-pack-modal-active .pc-price,
+body.mkl-pc-pack-modal-active .pc-product-price,
+body.mkl-pc-pack-modal-active [class*="pc-total-"]:not([class*="container"]):not([class*="wrap"]),
+body.mkl-pc-pack-modal-active .pc-footer__price,
+body.mkl-pc-pack-modal-active .mkl-pc-total {
+	display: none !important;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   Cart line — collapsible per-slot summary
+   ────────────────────────────────────────────────────────────────────────── */
+
+.mkl-pc-pack-configuration .wc-item-meta-label,
+.mkl-pc-pack-configuration > strong:first-child,
+.mkl-pc-pack-configuration > .label,
+li.mkl-pc-pack-configuration > strong,
+dl.variation dt.mkl-pc-pack-configuration,
+dl.variation dt.variation-,
+dl.variation dt:empty,
+.mkl-pc-pack-configuration::before,
+.mkl-pc-pack-configuration .variation-label {
+	display: none !important;
+}
+
+.mkl-pc-pack-cart-wrapper {
+	display: block;
+	margin: 6px 0 2px;
+}
+.mkl-pc-pack-cart-child {
+	border: 1px solid #e8e8e8;
+	border-radius: 6px;
+	margin-bottom: 4px;
+	background: #fafafa;
+}
+.mkl-pc-pack-cart-child:last-child {
+	margin-bottom: 0;
+}
+.mkl-pc-pack-cart-summary {
+	cursor: pointer;
+	padding: 6px 8px 6px 6px;
+	list-style: none;
+	user-select: none;
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: .9em;
+}
+.mkl-pc-pack-cart-summary::-webkit-details-marker { display: none; }
+.mkl-pc-pack-cart-summary::marker { content: ''; }
+.mkl-pc-pack-cart-summary::before {
+	content: '▸';
+	display: inline-block;
+	transition: transform .15s ease;
+	font-size: .8em;
+	color: #777;
+	width: 10px;
+	flex: 0 0 10px;
+	text-align: center;
+	margin-right: 2px;
+}
+.mkl-pc-pack-cart-child[open] > .mkl-pc-pack-cart-summary::before {
+	transform: rotate(90deg);
+}
+.mkl-pc-pack-cart-child-title {
+	font-weight: 600;
+	color: #222;
+}
+.mkl-pc-pack-cart-child-count {
+	color: #888;
+	font-size: .85em;
+	font-weight: 400;
+}
+.mkl-pc-pack-cart-child-body {
+	padding: 4px 8px 8px 22px;
+	border-top: 1px dashed #ececec;
+}
+.mkl-pc-pack-cart-row {
+	font-size: .85em;
+	line-height: 1.5;
+	color: #333;
+}
+.mkl-pc-pack-cart-row strong {
+	font-weight: 600;
+	color: #444;
+}
+.mkl-pc-pack-cart-row .semicol {
+	margin-right: 3px;
+}
+.mkl-pc-pack-cart-row .mkl_pc-choice-value {
+	color: #555;
+}
+
+.mkl-pc-pack-configuration {
+	display: block !important;
+}
+
+/* ── Personalised product configuration on order pages ──────────────────────
+   (thank-you, my-account, wp-admin order). A real <table> per group so theme
+   order-meta CSS can't flatten the label/value columns; full-width and stacked
+   on mobile. Shared by single products and packs. */
+
+/* "Produit personnalisé ajouté:" — themes render order meta as a label column
+   beside the value, which squashes the card (badly on mobile). Force that meta
+   label to a small block title sitting ON TOP of the cards, full width. */
+.wc-item-meta li:has(.mkl-pc-config) {
+	display: block !important;
+	width: 100%;
+	float: none;
+	margin-top: 14px;
+}
+.wc-item-meta li:has(.mkl-pc-config) > .wc-item-meta-label {
+	display: block;
+	float: none;
+	width: auto;
+	max-width: none;
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: .85em;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #555;
+}
+
+.mkl-pc-config,
+.mkl-pc-config * {
+	box-sizing: border-box;
+}
+.mkl-pc-config {
+	display: block;
+	width: 100%;
+	margin: 4px 0 2px;
+	clear: both;
+}
+.mkl-pc-config-group {
+	margin: 0 0 12px;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+}
+.mkl-pc-config-group:last-child {
+	margin-bottom: 0;
+}
+.mkl-pc-config-group-title {
+	padding: 9px 14px;
+	background: #f6f6f6;
+	border-bottom: 1px solid #ececec;
+	font-weight: 700;
+	font-size: .78em;
+	letter-spacing: .06em;
+	text-transform: uppercase;
+	color: #1a1a1a;
+}
+.mkl-pc-config .mkl-pc-config-table {
+	width: 100%;
+	margin: 0;
+	border: 0;
+	border-collapse: collapse;
+	background: none;
+}
+.mkl-pc-config .mkl-pc-config-table tr {
+	background: none;
+}
+.mkl-pc-config .mkl-pc-config-table td {
+	padding: 9px 14px;
+	border: 0;
+	border-top: 1px solid #f2f2f2;
+	vertical-align: top;
+	line-height: 1.45;
+	background: none;
+}
+.mkl-pc-config .mkl-pc-config-table tr:first-child td {
+	border-top: 0;
+}
+.mkl-pc-config .mkl-pc-config-label {
+	width: 42%;
+	color: #777;
+	font-weight: 400;
+	font-size: .9em;
+}
+.mkl-pc-config .mkl-pc-config-label::after {
+	content: ":";
+}
+.mkl-pc-config .mkl-pc-config-value {
+	color: #1a1a1a;
+	font-weight: 600;
+	font-size: .9em;
+	word-break: break-word;
+}
+.mkl-pc-swatch {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .2);
+	margin-right: 6px;
+	vertical-align: middle;
+}
+
+/* ── Order-details line layout: bigger image + price as a full-width row ──────
+   Themes show the line item as [Product | Total], leaving the price stranded
+   in a tall, near-empty right column next to the configuration. Stack the line
+   item so the product (image + name + config) is full width and the price sits
+   on its own clean full-width row underneath. Scoped to .order_item so the cart,
+   checkout and the totals (tfoot) are untouched. */
+.woocommerce-order-details thead {
+	display: none;
+}
+.woocommerce-order-details .order_item {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+.woocommerce-order-details .order_item > td {
+	flex: 1 1 100%;
+	width: 100%;
+}
+.woocommerce-order-details .order_item > td.product-name,
+.woocommerce-order-details .order_item > td.woocommerce-table__product-name {
+	padding-right: 0;
+}
+.woocommerce-order-details .order_item > td.product-total,
+.woocommerce-order-details .order_item > td.woocommerce-table__product-total {
+	margin-top: 14px;
+	padding-top: 12px;
+	border-top: 1px solid #ececec;
+	text-align: left;
+	font-weight: 600;
+	color: #1a1a1a;
+}
+.woocommerce-order-details .order_item > td.product-total::before,
+.woocommerce-order-details .order_item > td.woocommerce-table__product-total::before {
+	content: "Total produit : ";
+	font-weight: 600;
+	color: #555;
+}
+
+/* Bigger, cleaner product image. */
+.woocommerce-order-details .product-thumbnail {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+}
+.woocommerce-order-details .product-name .product-thumbnail img,
+.woocommerce-order-details .product-thumbnail img,
+.woocommerce-order-details td.product-name img,
+.woocommerce-order-details .woocommerce-table__product-name img {
+	width: 140px !important;
+	max-width: 140px !important;
+	height: auto !important;
+	border-radius: 6px;
+}
+
+/* Space between the thumbnail/title area and the configuration card. */
+.woocommerce-order-details td.product-name .wc-item-meta,
+.woocommerce-order-details td.woocommerce-table__product-name .wc-item-meta {
+	clear: both;
+	display: block;
+	width: 100%;
+	margin-top: 18px;
+}
+
+/* ── Mobile: full width, stack label above value, wrap, clear row spacing ── */
+@media (max-width: 600px) {
+	.mkl-pc-config .mkl-pc-config-table,
+	.mkl-pc-config .mkl-pc-config-table tbody,
+	.mkl-pc-config .mkl-pc-config-table tr,
+	.mkl-pc-config .mkl-pc-config-table td {
+		display: block;
+		width: 100%;
+	}
+	.mkl-pc-config .mkl-pc-config-table tr {
+		padding: 9px 14px;
+		border-top: 1px solid #f2f2f2;
+	}
+	.mkl-pc-config .mkl-pc-config-table tr:first-child {
+		border-top: 0;
+	}
+	.mkl-pc-config .mkl-pc-config-table td {
+		padding: 0;
+		border-top: 0;
+	}
+	.mkl-pc-config .mkl-pc-config-label {
+		width: auto;
+		margin-bottom: 2px;
+		font-size: .8em;
+		font-weight: 500;
+		color: #888;
+	}
+	.mkl-pc-config .mkl-pc-config-label::after {
+		content: "";
+	}
+	.mkl-pc-config .mkl-pc-config-value {
+		font-size: .92em;
+	}
+	.woocommerce-order-details .product-name .product-thumbnail img,
+	.woocommerce-order-details .product-thumbnail img,
+	.woocommerce-order-details td.product-name img,
+	.woocommerce-order-details .woocommerce-table__product-name img {
+		width: 110px !important;
+		max-width: 110px !important;
+	}
+	/* Force the product-name cell to flex-wrap so the config card
+	   drops to its own full-width row below the thumbnail + title. */
+	.woocommerce-order-details td.product-name,
+	.woocommerce-order-details td.woocommerce-table__product-name {
+		display: flex !important;
+		flex-wrap: wrap !important;
+		align-items: flex-start !important;
+	}
+	.woocommerce-order-details td.product-name .product-thumbnail,
+	.woocommerce-order-details td.woocommerce-table__product-name .product-thumbnail {
+		flex: 0 0 auto;
+		float: none !important;
+	}
+	.woocommerce-order-details td.product-name .wc-item-meta,
+	.woocommerce-order-details td.woocommerce-table__product-name .wc-item-meta {
+		flex: 0 0 100% !important;
+		width: 100% !important;
+	}
+	.woocommerce-order-details td.product-name .configuration-link,
+	.woocommerce-order-details td.woocommerce-table__product-name .configuration-link {
+		flex: 0 0 100%;
+		width: 100%;
+		margin-top: 8px;
+	}
+}

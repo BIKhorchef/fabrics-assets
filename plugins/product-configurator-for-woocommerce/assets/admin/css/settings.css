@@ -1,0 +1,560 @@
+.settings_page_mkl_pc_settings h1 {
+	position: relative;
+	background: #FFF;
+	margin-left: -20px;
+	margin-top: -9px;
+	margin-right: -20px;
+	padding: 20px;
+	display: block !important;
+}
+.settings_page_mkl_pc_settings .wrap > header {
+	margin-bottom: 20px;
+}
+
+.settings_page_mkl_pc_settings .wrap > header .links {
+	margin-top: 10px;
+	text-align: right;
+}
+
+.settings_page_mkl_pc_settings h1 span.by {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	font-size: 1rem;
+}
+
+.settings_page_mkl_pc_settings h1 span.version {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	vertical-align: top;
+	transform: translate(4px, -6px);
+	color: #CCC;
+	font-size: 1rem;
+}
+
+.mkl-settings-content {
+	display: none;
+}
+
+.mkl-settings-content.active {
+	display: block;
+}
+
+.mkl-settings-content table.form-table {
+    margin-bottom: 2em;
+}
+
+.mkl-settings-content table.form-table tr.section-heading th, 
+.mkl-settings-content table.form-table tr.section-heading td {
+    border-bottom: 1px solid #CCC;
+}
+
+.mkl-pc-addons {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.mkl-pc-addon {
+	
+	padding: 1em;
+	margin: 0 1.9em 2em 0;
+	width: calc(32.99% - 1em);
+	position: relative; 
+	border: 1px solid #ddd;
+	/* flex-wrap: wrap; */
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+	box-shadow: 0 1px 1px -1px rgba(0,0,0,0.1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mkl-pc-addon .button span.dashicons {
+	transform: translate(4px, 4px);
+}
+.mkl-pc-addon:nth-child(3n) {
+	margin-right: 0;
+}
+
+.mkl-pc-addon .desc {
+	margin-bottom: 2em;
+}
+.mkl-pc-addon h4 {
+	font-size: 1.4em;
+	position: relative;
+}
+
+.mkl-pc-addon h4 span.installed {
+	position: absolute;
+	right: 10px;
+	top: -35px;
+	background: #ace64f;
+	font-size: 12px;
+	color: #477300;
+	display: inline-block;
+	padding: 6px 16px;
+	line-height: 1;
+	border-radius: 40px;
+	box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5), 0 5px 12px rgba(72, 117, 0, 0.21);
+	text-transform: uppercase;
+}
+
+.mkl-pc-addon figure {
+	background: #e6e6e6;
+	margin: -1em -1em 1em -1em;
+	padding: 2em 1em;
+	text-align: center;
+	height: 80px;
+}
+
+.mkl-pc-addon figure img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.mkl-pc-addon:not(.installed):not(.mkl-pc-theme) {
+	background: #f5f5f5;
+}
+
+.mkl-pc-addon.mkl-pc-theme {
+	width: 100%;
+	display: flex; 
+	align-items: center;
+}
+.mkl-pc-addon.mkl-pc-theme figure {
+	background: transparent;
+	width: 240px;
+	height: auto;
+	padding: 0;
+	/* padding-top: 4em; */
+	text-align: left;
+	margin: 3em 0em 1em -1em;
+}
+
+/* LICENSE */
+.mkl-pc-addon .license {
+	border-top: 1px solid #dedede;
+}
+.mkl-pc-addon .license p {
+	margin: 0;
+	float: left;
+}
+.mkl-pc-addon .license a.mkl-edit-license {
+	float: right;
+	margin-top: 9px;
+	clear: right;
+}
+.license a.mkl-edit-license::after {
+	font-family: 'dashicons';
+	content: '\f140';
+	display: inline-block;
+	font-size:1.4em;
+	vertical-align: middle;
+}
+.license a.mkl-edit-license.open::after {
+	content: '\f143';
+}
+
+.mkl-pc-addon .license a.mkl-edit-license + form {
+	clear: both;
+}
+
+.mkl-pc-addon .license form input[type=text] {
+	padding: 4px 7px;
+}
+.mkl-pc-addon .installed p:before {
+	color: #79ba49;
+	content: '\f147';
+	font-family: 'dashicons';
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.mkl-pc-addon .mkl-edit-license + form {
+	display: none;
+}
+.mkl-pc-addon .mkl-edit-license.open + form {
+	display: block;
+}
+
+@media only screen and (max-width: 860px) {
+	.mkl-pc-addon {
+		width: calc(50% - 1em);
+		margin-right: 1em;
+	}
+	.mkl-pc-addon:nth-child(3n) {
+		margin-right: 1em;
+	}
+	.mkl-pc-addon:nth-child(2n) {
+		margin-right: 1em;
+	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.mkl-pc-addons {
+		flex-direction: column;
+	}
+	.mkl-pc-addon {
+		width: 100%;
+		margin-right: 0;
+	}
+
+}
+
+/*
+	Theme settings
+*/
+
+.theme_setting {
+	background: #FFF;
+	border-radius: 6px;
+	padding: 1em;
+	box-shadow: 0 2px 5px rgb(0 0 0 / 15%);
+}
+
+.theme_setting .theme_setting_view {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.theme_setting img {
+	max-width: 150px;
+	border-radius: 4px;
+	display: block;
+}
+
+.theme_setting .img {
+	padding-right: 1em;
+}
+
+.theme_setting .content {
+    box-sizing: border-box;
+	border-left: 1px solid #efefef;
+	padding-left: 1em;
+	width: calc(100% - (150px + 1em ));
+}
+
+.theme_setting .content h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.theme_setting .content p {
+    margin-bottom: 0.7em;
+}
+
+.theme_setting .content p ~ button {
+    margin-right: .5em;
+}
+
+.theme_setting p.no-theme {
+    margin-right: .5em;
+}
+
+.mkl-pc__theme-selector {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.6);
+	z-index: 20000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.mkl-pc-themes {
+	position: absolute;
+	min-height: 60vh;
+	min-width: 60vw;
+	background: #eaeaea;
+}
+
+.themes-list {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: calc(100% - 80px);
+	padding: 1em;
+	align-items: start;
+    align-content: flex-start;
+	box-sizing: border-box;	
+	overflow-y: auto;
+	flex-wrap: wrap;
+}
+
+.mkl-pc-themes footer {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	border-top: 1px solid #CCC;
+	align-items: center;
+}
+
+.mkl-pc-themes .actions {
+	justify-self: right;
+	padding-right: 1.5em;
+	padding-left: 1em;
+}
+
+.mkl-pc-themes .selection {
+	flex: 1;
+}
+
+.themes-list .mkl-pc__theme {
+	width: calc(33% - 1em);
+	box-sizing: border-box;
+	background: #FFF;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 2px;
+	border-radius: 6px;
+	position: relative;
+	overflow: hidden;
+}
+
+.themes-list .mkl-pc__theme.selected {
+	box-shadow: 0 0 0 3px #eaeaea, 0 0 0 5px #2271b1;
+}
+
+.themes-list .mkl-pc__theme .trigger {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	appearance: none;
+	background: transparent;
+	border: none;
+	z-index: 3;
+}
+
+.themes-list .mkl-pc__theme .theme-preview img {
+	display: block;
+	max-width: 100%;
+}
+
+.themes-list .mkl-pc__theme .text {
+	position: absolute;
+	visibility: hidden;
+	transition: .2s all ease-out;
+	top: 100%;
+	height: 100%;
+	width: 100%;
+	background: #fffffff2;
+	left: 0;
+	border-radius: 6px;
+	padding: 1.7em;
+	box-sizing: border-box;
+	opacity: 0;
+	z-index: 2;
+}
+
+.themes-list .mkl-pc__theme:hover .text {
+	top: 0;
+	visibility: visible;
+	opacity: 1;
+}
+
+.themes-list .mkl-pc__theme span.no-preview {
+	display: block;
+	height: 0;
+	padding-bottom: 65%;
+	align-items: center;
+	justify-content: center;
+	line-height: 7;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #CCC;
+	font-size: 1.4em;
+}
+
+.themes-list .mkl-pc__theme span.no-preview--label {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.4em;
+	color: #CCC;
+	z-index: 1;
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme img {
+	height: 60px;
+	display: block;
+	margin-left: 10px;
+   
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-self:start;
+	align-self: left;
+	float: left;
+	align-items: center;
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme button.trigger {
+	display: none;
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme .text {
+	margin-left: 1em;
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme .text h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.mkl-pc-themes .mkl-pc__theme .text .tags {
+	color: #afafaf;
+}
+
+.mkl-pc-themes .selection .mkl-pc__theme span.no-preview {
+	display: none;
+}
+
+.configurable-products-list.loading {
+    position: relative;
+}
+
+.configurable-products-list.loading::after {
+    content: 'Loading configurable products...';
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    position: absolute;
+    background: #f0f0f1cf;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+
+button.mkl-settings-toggle-images-in-library[data-mode="hide"] .show-configurations-label,
+button.mkl-settings-toggle-images-in-library[data-mode="show"] .hide-configurations-label{
+    display: none;
+}
+
+.mkl-settings-content[data-content="settings"].active {
+    display: flex;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px #00000020;
+    background: #f7f5f5;
+}
+
+.mkl-settings-content[data-content="settings"] section:not(.active) {
+	display: none;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu {
+    width: 230px;
+    background: #FFF;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu a.active {
+	border-left: 4px solid var(--wc-blue);
+	background: #f7f5f5;
+	color: #000;
+	box-shadow: 2px -2px 4px -2px inset #0000002e;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu a.active:focus,
+.mkl-settings-content[data-content="settings"] .submenu a.active:active {
+	outline: none;
+	box-shadow: none;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu + form {
+	padding: 20px;
+	box-sizing: border-box;
+	width: calc( 100% - 250px);
+	padding-top: 0;
+}
+
+.mkl-settings-content[data-content="settings"] .submenu + form  p.submit {
+	position: sticky;
+	bottom: 0;
+	background: #f7f5f5;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 20px;
+	box-shadow: 0 -20px 25px -25px #0000003d;
+}
+
+.settings_page_mkl_pc_settings tr.heading {
+    border-bottom: 1px solid #CCC;
+}
+.settings_page_mkl_pc_settings tr.heading th {
+    text-transform: uppercase;
+}
+
+.mkl-settings-content fieldset.checkboxes label {
+	display: block
+}
+
+@media (max-width: 1100px) {
+	.mkl-pc-themes {
+		min-height: 90vh;
+		min-width: 90vw;
+	}
+	.themes-list .mkl-pc__theme {
+		width: calc(50% - 1em);
+	}
+
+}
+
+@media (max-width: 500px) {
+	.mkl-pc-themes {
+		min-height: 98vh;
+		min-width: 98vw;
+	}
+	.themes-list .mkl-pc__theme {
+		width: 100%;
+		margin-right: 0;
+	}
+	.mkl-pc-themes footer {
+		flex-direction: column;
+		height: auto;
+		max-height: 30vh;
+		background: #eaeaea;
+		padding: .5em;
+		z-index: 3;
+	}
+	.mkl-pc-themes footer .selection,
+	.mkl-pc-themes footer .actions {
+		flex: auto;
+		width: 100%;
+	}
+	.mkl-pc-themes footer .actions {
+		text-align: center;
+		padding-top: 10px;
+	}
+}

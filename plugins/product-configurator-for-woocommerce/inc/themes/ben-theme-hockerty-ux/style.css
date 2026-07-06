@@ -1,0 +1,833 @@
+/*!
+Theme Name: Ben Theme Hockerty UX
+Description: A clean Hockerty-style configurator theme based on plugin layers
+Tags: Left
+Supports: columns, color_swatches
+*/
+
+:root {
+  --mkl_pc_color-primary: #F5841B;
+  --mkl_pc_color-primary_hover: #E0740F;
+  --mkl_pc_color-container-bg: #FFFFFF;
+  --mkl_pc_color-viewer-bg: #FFFFFF;
+  --mkl_pc_color-border-color: #E8E8E8;
+  --mkl_pc_color-layers_button_text_color: #333;
+  --mkl_pc_color-choices_button_text_color: #333;
+  --mkl_pc_color-active_layer_button_bg_color: #FFF;
+  --mkl_pc_color-active_layer_button_text_color: #F5841B;
+  --mkl_pc_color-active_choice_button_bg_color: #FFF;
+  --mkl_pc_color-active_choice_button_text_color: #F5841B;
+  --mkl_pc_toolbar_width: 280px;
+  --mkl_pc_toolbar_width_medium: 250px;
+  --mkl_pc_toolbar_width_small: 80px;
+  --mkl_pc_thumbnail_size: 55px;
+  --mkl_pc_icon_border_radius: 8px;
+  --mkl_pc_footer_height: 0;
+  --mkl_pc_scrollbar-width: 4px;
+  --mkl_pc_border-radius: 0;
+  --mkl_pc_choice_min_height: 80px;
+  --mkl_pc_layer_min_height: 50px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --mkl_pc_toolbar_width: var(--mkl_pc_toolbar_width_small);
+  }
+}
+
+/* WooCommerce Integration */
+.configurator_is_opened:not(.configurator_is_inline) {
+  overflow: hidden;
+}
+
+.is_configurable div.product form.cart {
+  border: none;
+}
+
+.is_configurable:not(.enable-add-to-cart):not(.configurator_is_inline) div.product form.cart .quantity,
+.is_configurable:not(.enable-add-to-cart):not(.configurator_is_inline) div.product form.cart .single_add_to_cart_button {
+  display: none;
+}
+
+/* Main Configurator */
+.mkl_pc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.mkl_pc .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.mkl_pc .mkl_pc_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--mkl_pc_color-container-bg);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.4s ease;
+}
+
+.mkl_pc.opened .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkl_pc.opened .mkl_pc_container {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Viewer Background */
+.mkl_pc .mkl_pc_bg {
+  position: absolute;
+  left: var(--mkl_pc_toolbar_width);
+  top: 0;
+  right: 0;
+  bottom: var(--mkl_pc_footer_height);
+  background-color: var(--mkl_pc_color-viewer-bg);
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+/* Viewer */
+.mkl_pc .mkl_pc_viewer {
+  position: absolute;
+  z-index: 4;
+  left: var(--mkl_pc_toolbar_width);
+  top: 0;
+  right: 0;
+  bottom: var(--mkl_pc_footer_height);
+  background-color: var(--mkl_pc_color-viewer-bg);
+  transition: all 0.3s ease;
+}
+
+.mkl_pc .mkl_pc_viewer .product-configuration {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+}
+
+/* Toolbar (Left Sidebar) */
+.mkl_pc .mkl_pc_toolbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: var(--mkl_pc_footer_height);
+  width: var(--mkl_pc_toolbar_width);
+  background: var(--mkl_pc_color-container-bg);
+  border-right: 1px solid var(--mkl_pc_color-border-color);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Close Button */
+.mkl_pc .close-mkl-pc {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  z-index: 100;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.mkl_pc .close-mkl-pc:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.mkl_pc .close-mkl-pc svg {
+  width: 20px;
+  height: 20px;
+  fill: #666;
+}
+
+/* Layers List */
+.mkl_pc .layers-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 15px;
+}
+
+.mkl_pc .layers-list::-webkit-scrollbar {
+  width: var(--mkl_pc_scrollbar-width);
+}
+
+.mkl_pc .layers-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mkl_pc .layers-list::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+/* Layer Groups */
+.mkl_pc .layer-title,
+.mkl_pc .layer-group-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 20px 0 10px;
+  padding: 0 5px;
+}
+
+.mkl_pc .layer-title:first-child {
+  margin-top: 0;
+}
+
+/* Layer Items */
+.mkl_pc .layers-list > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mkl_pc .layers-list li {
+  margin-bottom: 8px;
+}
+
+.mkl_pc .layers-list li button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: var(--mkl_pc_icon_border_radius);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  color: var(--mkl_pc_color-layers_button_text_color);
+}
+
+.mkl_pc .layers-list li button:hover {
+  background: #f5f5f5;
+}
+
+.mkl_pc .layers-list li.active button {
+  background: var(--mkl_pc_color-active_layer_button_bg_color);
+  border-color: var(--mkl_pc_color-primary);
+  color: var(--mkl_pc_color-active_layer_button_text_color);
+}
+
+/* Layer Thumbnails */
+.mkl_pc .layers-list .layer-image {
+  width: var(--mkl_pc_thumbnail_size);
+  height: var(--mkl_pc_thumbnail_size);
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mkl_pc .layers-list .layer-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.mkl_pc .layers-list .layer-name {
+  font-size: 14px;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Choices Panel */
+.mkl_pc .layer_choices {
+  position: absolute;
+  left: var(--mkl_pc_toolbar_width);
+  top: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  border-right: 1px solid var(--mkl_pc_color-border-color);
+  z-index: 9;
+  overflow-y: auto;
+  padding: 20px;
+  transform: translateX(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mkl_pc.showing-choices .layer_choices {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.mkl_pc.showing-choices .mkl_pc_viewer,
+.mkl_pc.showing-choices .mkl_pc_bg {
+  left: calc(var(--mkl_pc_toolbar_width) + 280px);
+}
+
+/* Choices List */
+.mkl_pc .choices-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.mkl_pc .choices-list li {
+  list-style: none;
+}
+
+.mkl_pc .choices-list li button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  border: 2px solid transparent;
+  border-radius: var(--mkl_pc_icon_border_radius);
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.mkl_pc .choices-list li button:hover {
+  border-color: #ddd;
+}
+
+.mkl_pc .choices-list li.active button {
+  border-color: var(--mkl_pc_color-primary);
+  background: #fff;
+}
+
+/* Active Choice Checkmark */
+.mkl_pc .choices-list li.active button::before {
+  content: '✓';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 18px;
+  height: 18px;
+  background: var(--mkl_pc_color-primary);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Choice Images */
+.mkl_pc .choices-list .choice-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mkl_pc .choices-list .choice-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.mkl_pc .choices-list .choice-name {
+  font-size: 12px;
+  color: var(--mkl_pc_color-choices_button_text_color);
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Footer */
+.mkl_pc .mkl_pc_footer {
+  position: absolute;
+  left: var(--mkl_pc_toolbar_width);
+  right: 0;
+  bottom: 0;
+  height: auto;
+  min-height: 70px;
+  background: #fff;
+  border-top: 1px solid var(--mkl_pc_color-border-color);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+}
+
+.mkl_pc .mkl_pc_footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.mkl_pc .mkl_pc_footer .product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.mkl_pc .mkl_pc_footer .product-price {
+  font-size: 16px;
+  color: #666;
+}
+
+.mkl_pc .mkl_pc_footer .price {
+  font-weight: 600;
+  color: var(--mkl_pc_color-primary);
+}
+
+/* Add to Cart Button */
+.mkl_pc .mkl_pc_footer .single_add_to_cart_button,
+.mkl_pc .mkl_pc_footer .add-to-cart-btn {
+  background: var(--mkl_pc_color-primary);
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.mkl_pc .mkl_pc_footer .single_add_to_cart_button:hover,
+.mkl_pc .mkl_pc_footer .add-to-cart-btn:hover {
+  background: var(--mkl_pc_color-primary_hover);
+}
+
+/* Quantity Input */
+.mkl_pc .mkl_pc_footer .quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.mkl_pc .mkl_pc_footer .quantity input {
+  width: 50px;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Reset & Save Buttons */
+.mkl_pc .reset-configuration,
+.mkl_pc .save-your-design {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.mkl_pc .reset-configuration:hover,
+.mkl_pc .save-your-design:hover {
+  border-color: var(--mkl_pc_color-primary);
+  color: var(--mkl_pc_color-primary);
+}
+
+.mkl_pc .reset-configuration svg,
+.mkl_pc .save-your-design svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Angles Navigation */
+.mkl_pc .angles-nav {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 15;
+}
+
+.mkl_pc .angles-nav button {
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  padding: 5px;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.mkl_pc .angles-nav button:hover {
+  border-color: #ddd;
+}
+
+.mkl_pc .angles-nav button.active {
+  border-color: var(--mkl_pc_color-primary);
+}
+
+.mkl_pc .angles-nav button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Loading State */
+.mkl_pc .loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.mkl_pc .spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid var(--mkl_pc_color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* =============================================
+   MOBILE STYLES
+============================================= */
+@media (max-width: 768px) {
+  .mkl_pc .mkl_pc_toolbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    border-right: none;
+    border-top: 1px solid var(--mkl_pc_color-border-color);
+    flex-direction: row;
+    padding: 10px;
+    z-index: 20;
+  }
+
+  .mkl_pc .mkl_pc_viewer,
+  .mkl_pc .mkl_pc_bg {
+    left: 0;
+    bottom: 80px;
+  }
+
+  .mkl_pc .layers-list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px;
+    flex: 1;
+  }
+
+  .mkl_pc .layers-list > ul {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mkl_pc .layers-list li {
+    margin-bottom: 0;
+  }
+
+  .mkl_pc .layers-list li button {
+    flex-direction: column;
+    text-align: center;
+    padding: 8px;
+    min-width: 70px;
+  }
+
+  .mkl_pc .layers-list .layer-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mkl_pc .layers-list .layer-name {
+    font-size: 11px;
+  }
+
+  /* Mobile Choices Panel */
+  .mkl_pc .layer_choices {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 85%;
+    max-width: 320px;
+    height: calc(100% - 80px);
+    transform: translateX(-100%);
+    z-index: 25;
+    box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+  }
+
+  .mkl_pc.showing-choices .layer_choices {
+    transform: translateX(0);
+  }
+
+  .mkl_pc.showing-choices .mkl_pc_viewer,
+  .mkl_pc.showing-choices .mkl_pc_bg {
+    left: 0;
+  }
+
+  /* Mobile Footer */
+  .mkl_pc .mkl_pc_footer {
+    left: 0;
+    bottom: 80px;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .mkl_pc .mkl_pc_footer .footer-left {
+    flex: 1;
+    min-width: 150px;
+  }
+
+  .mkl_pc .mkl_pc_footer .product-name {
+    font-size: 15px;
+  }
+
+  .mkl_pc .mkl_pc_footer .single_add_to_cart_button {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  /* Close Button Mobile */
+  .mkl_pc .close-mkl-pc {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+  }
+
+  /* Hide reset/save text on mobile */
+  .mkl_pc .reset-configuration span,
+  .mkl_pc .save-your-design span {
+    display: none;
+  }
+
+  .mkl_pc .reset-configuration,
+  .mkl_pc .save-your-design {
+    padding: 8px;
+  }
+}
+
+/* =============================================
+   PRODUCT INFO SIDEBAR (Desktop Only)
+============================================= */
+@media (min-width: 1200px) {
+  .mkl_pc .product-info-sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 220px;
+    background: transparent;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    z-index: 5;
+  }
+
+  .mkl_pc .product-info-sidebar .product-title {
+    font-size: 28px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+
+  .mkl_pc .product-info-sidebar .product-price-display {
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+
+  .mkl_pc .product-info-sidebar .product-price-display .amount {
+    font-weight: 600;
+  }
+
+  .mkl_pc .product-info-sidebar .tax-info {
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 25px;
+  }
+
+  .mkl_pc .product-info-sidebar .add-to-cart-btn {
+    background: var(--mkl_pc_color-primary);
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .mkl_pc .product-info-sidebar .add-to-cart-btn:hover {
+    background: var(--mkl_pc_color-primary_hover);
+  }
+}
+
+/* =============================================
+   COLOR SWATCHES
+============================================= */
+.mkl_pc .choices-list li.is-color button {
+  padding: 8px;
+}
+
+.mkl_pc .choices-list li.is-color .choice-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.mkl_pc .choices-list li.is-color.active .choice-image {
+  border-color: var(--mkl_pc_color-primary);
+}
+
+/* =============================================
+   DROPDOWN MODE
+============================================= */
+.mkl_pc .layer-dropdown {
+  position: relative;
+}
+
+.mkl_pc .layer-dropdown select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.mkl_pc .layer-dropdown select:focus {
+  border-color: var(--mkl_pc_color-primary);
+  outline: none;
+}
+
+/* =============================================
+   EXTRA PRICE DISPLAY
+============================================= */
+.mkl_pc .choice-extra-price {
+  font-size: 11px;
+  color: var(--mkl_pc_color-primary);
+  font-weight: 500;
+}
+
+/* =============================================
+   FORM BUILDER FIELDS
+============================================= */
+.mkl_pc .form-field {
+  margin-bottom: 15px;
+}
+
+.mkl_pc .form-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.mkl_pc .form-field input[type="text"],
+.mkl_pc .form-field textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.mkl_pc .form-field input:focus,
+.mkl_pc .form-field textarea:focus {
+  border-color: var(--mkl_pc_color-primary);
+  outline: none;
+}
+
+/* =============================================
+   INLINE MODE
+============================================= */
+.mkl_pc.configurator_is_inline {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+}
+
+.mkl_pc.configurator_is_inline .overlay {
+  display: none;
+}
+
+.mkl_pc.configurator_is_inline .mkl_pc_container {
+  position: relative;
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.mkl_pc.configurator_is_inline .close-mkl-pc {
+  display: none;
+}

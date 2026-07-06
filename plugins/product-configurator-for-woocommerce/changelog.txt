@@ -1,0 +1,11 @@
+= 1.5.12 =
+* Add: Note layer type — a textarea where customers can leave a free-form note (e.g. special instructions). Supports an optional label, placeholder, max-character limit with live counter, and a "required" flag enforced at add-to-cart.
+* Add: Note selections persist through cart, checkout, order details, order emails, reorder, and save-your-design.
+* Fix: Cart row order — text-overlay rows now render in their layer's original position instead of being appended at the end of the cart line.
+* Fix: Group-step header rendering — steps that contain only an attribute / text-overlay / option-selector / note layer now correctly render their "Step N" header in the summary panel and cart line.
+
+= 1.5.11 =
+* Add: Option Selector layer type. A control-only step that lets the merchant present option / sub-option buttons (e.g. Premium vs. Business with sub-tiers) and gate which terms are visible in downstream Attribute layers.
+* Add: Visibility rules engine — each option / sub-option can whitelist or blacklist terms (or whole groups) on any Attribute layer.
+* Add: Server-side enforcement: disallowed attribute terms are stripped from the cart even if the POST is tampered with.
+* Add: Cart, checkout, order and email rendering of the chosen option / sub-option, plus optional price modifier.

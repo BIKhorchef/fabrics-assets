@@ -1,0 +1,276 @@
+/**
+ * Conditional Logic - Admin Styles
+ */
+
+/* ── Main layout ─────────────────────────────────────────── */
+
+.conditions-state .conditions {
+	display: flex;
+	height: 100%;
+}
+
+.conditions-content {
+	flex: 0 0 280px;
+	border-right: 1px solid #dcdcde;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+.conditions-state .pc-sidebar {
+	flex: 1;
+	overflow-y: auto;
+	padding: 0;
+}
+
+/* ── Toolbar (add condition bar) ─────────────────────────── */
+
+.conditions-toolbar {
+	display: flex;
+	align-items: center;
+	padding: 8px 12px;
+	border-bottom: 1px solid #dcdcde;
+	background: #f6f7f7;
+}
+
+.conditions-toolbar h4 {
+	flex: 1;
+	margin: 0;
+}
+
+.conditions-toolbar input[type="text"] {
+	width: 100%;
+	margin: 0;
+}
+
+.conditions-toolbar .add-condition {
+	margin-left: 8px;
+	flex-shrink: 0;
+}
+
+/* ── Condition list ──────────────────────────────────────── */
+
+.conditions-list {
+	flex: 1;
+	overflow-y: auto;
+}
+
+.condition-item {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #f0f0f1;
+	cursor: pointer;
+	transition: background 0.15s;
+}
+
+.condition-item:hover {
+	background: #f0f6fc;
+}
+
+.condition-item.active {
+	background: #2271b1;
+}
+
+.condition-item.active h3 {
+	color: #fff;
+}
+
+.condition-item.active .condition-disabled-badge {
+	background: rgba(255,255,255,0.25);
+	color: #fff;
+}
+
+.condition-item .tips.sort {
+	padding: 8px 4px;
+	cursor: grab;
+	opacity: 0.5;
+}
+
+.condition-item .condition-select-btn {
+	flex: 1;
+	background: none;
+	border: none;
+	padding: 8px 12px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.condition-item h3 {
+	margin: 0;
+	font-size: 13px;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.condition-disabled-badge {
+	font-size: 10px;
+	font-weight: normal;
+	background: #dcdcde;
+	color: #646970;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+
+/* ── Empty state ─────────────────────────────────────────── */
+
+.conditions-detail-empty {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	color: #646970;
+	font-style: italic;
+}
+
+/* ── Detail panel ────────────────────────────────────────── */
+
+.condition-detail-panel {
+	padding: 16px;
+}
+
+.condition-detail-panel header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 16px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #dcdcde;
+}
+
+.condition-detail-panel header h2 {
+	margin: 0;
+	font-size: 14px;
+}
+
+.condition-detail-panel .actions-container {
+	display: flex;
+	gap: 12px;
+}
+
+.condition-detail-panel .delete-condition {
+	color: #b32d2e;
+}
+
+.condition-detail-panel .delete-condition:hover {
+	color: #a00;
+}
+
+/* ── Toolbar section ─────────────────────────────────────── */
+
+.condition-toolbar {
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.condition-name-setting {
+	margin-bottom: 12px;
+}
+
+.condition-name-setting label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+	font-size: 12px;
+}
+
+.condition-name-setting input[type="text"] {
+	width: 100%;
+}
+
+.condition-checkboxes {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+}
+
+.condition-checkbox {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.condition-checkbox input[type="checkbox"] {
+	margin: 0;
+}
+
+/* ── Rules section ───────────────────────────────────────── */
+
+.condition-rules-section,
+.condition-actions-section {
+	margin-bottom: 20px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #f0f0f1;
+}
+
+.condition-rules-section h3,
+.condition-actions-section h3 {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #646970;
+	margin: 0 0 12px 0;
+}
+
+.condition-rules-section .comparison-select {
+	margin: 0 4px;
+	padding: 0 4px;
+	min-height: 24px;
+	font-size: 12px;
+	vertical-align: baseline;
+}
+
+/* ── Rule and action rows ────────────────────────────────── */
+
+.condition-rule-row,
+.condition-action-row {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 8px;
+	flex-wrap: wrap;
+}
+
+.condition-rule-row select,
+.condition-action-row select {
+	min-width: 120px;
+	max-width: 200px;
+	font-size: 12px;
+}
+
+.rule-is-label {
+	font-size: 12px;
+	color: #646970;
+	white-space: nowrap;
+}
+
+.remove-rule,
+.remove-action-row {
+	color: #b32d2e !important;
+	padding: 2px !important;
+	flex-shrink: 0;
+}
+
+.remove-rule:hover,
+.remove-action-row:hover {
+	color: #a00 !important;
+}
+
+.add-rule,
+.add-action-row {
+	margin-top: 4px;
+	font-size: 12px;
+}
+
+.add-rule .dashicons,
+.add-action-row .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}

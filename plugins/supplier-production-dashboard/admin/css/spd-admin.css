@@ -1,0 +1,82 @@
+/**
+ * Supplier Production Dashboard — Admin Styles
+ */
+
+.spd-admin-wrap {
+    max-width: 1000px;
+}
+
+/* ── Statuses table ────────────────────────────────────── */
+.spd-statuses-table .spd-col-drag {
+    width: 30px;
+    text-align: center;
+}
+
+.spd-drag-handle {
+    cursor: grab;
+    color: #999;
+}
+
+.spd-drag-handle:active {
+    cursor: grabbing;
+}
+
+.spd-statuses-table input[type="text"] {
+    width: 100%;
+}
+
+.spd-statuses-table input[type="color"] {
+    width: 50px;
+    height: 34px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.spd-status-row.ui-sortable-helper {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.spd-status-row.ui-sortable-placeholder {
+    visibility: visible !important;
+    background: #f0f6fc;
+    border: 2px dashed #2271b1;
+}
+
+/* ── Mappings table ────────────────────────────────────── */
+.spd-mappings-table input[type="text"] {
+    width: 100%;
+}
+
+.spd-mappings-table textarea {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.spd-mappings-table .small-text {
+    width: 60px;
+}
+
+/* ── Scan results ──────────────────────────────────────── */
+.spd-scan-results {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+}
+
+.spd-scan-results h3 {
+    margin-top: 0;
+}
+
+.spd-scan-results code {
+    font-size: 12px;
+    padding: 2px 6px;
+    background: #f0f0f1;
+}
+
+/* ── Metabox ───────────────────────────────────────────── */
+.spd-metabox p {
+    margin-bottom: 12px;
+}

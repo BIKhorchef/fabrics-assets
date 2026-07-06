@@ -1,0 +1,18 @@
+/**
+ * Conditional Logic - Frontend Styles
+ */
+
+/* Disabled choice appearance */
+.pc-choice.disabled,
+.choice-item[disabled],
+.pc-choice.is-disabled {
+	opacity: 0.45;
+	pointer-events: none;
+	cursor: not-allowed;
+}
+
+/* Hidden by conditional logic - immediate hide */
+.pc-layer[data-cshow="false"],
+.pc-choice[data-cshow="false"] {
+	display: none;
+}

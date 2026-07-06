@@ -1,0 +1,1 @@
+PC.admin=Backbone.Model.extend({url:function(n,i){return n=n||PC.actionParameter,i=i||"init",ajaxurl+"?action="+n+"&data="+i+"&id="+this.id},defaults:{layers:!1,angles:!1,nonces:!1},initialize:function(){return this}});

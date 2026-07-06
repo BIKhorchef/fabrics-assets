@@ -1,0 +1,37 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Composer & node — only commit the lockfile, not the installs
+node_modules/
+# vendor/   # leave commented: this plugin ships vendor/ so end-users can install from a ZIP without composer
+
+# Build artefacts
+*.log
+*.zip
+dist/
+build/
+
+# Source maps (large, regenerable)
+maps/
+
+# Per-product runtime exports / generated tmp files Claude or other tools leave behind
+tmpclaude-*
+configurator-data--product-*.json
+!configurator-data--product-6349--with-conditions.json
+
+# WordPress secrets / config that should never be in a public plugin repo
+wp-config.php
+.env
+.env.*
+
+# Coverage / test caches
+coverage/
+.phpunit.result.cache
+.phpunit.cache/

@@ -1,0 +1,1 @@
+var PC=PC||{};PC.states=Backbone.Collection.extend({url:function(){return ajaxurl+"?action="+PC.actionParameter+"&data=menu"},model:PC.state,initialize:function(){},comparator:function(t){return t.get("order")}});

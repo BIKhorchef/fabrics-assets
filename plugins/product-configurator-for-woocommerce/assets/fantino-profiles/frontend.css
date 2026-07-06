@@ -1,0 +1,88 @@
+/* Fantino Configurator Profiles — frontend loader styles */
+
+/* Clicked / busy trigger */
+.fantino-pc-profile-trigger.fantino-pc-loading {
+    pointer-events: none;
+    opacity: 0.6;
+    position: relative;
+    cursor: wait;
+}
+.fantino-pc-profile-trigger.fantino-pc-loading::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    border: 2px solid currentColor;
+    border-top-color: transparent;
+    border-radius: 50%;
+    vertical-align: -2px;
+    animation: fantinoPcSpin 0.8s linear infinite;
+}
+
+/* Other triggers while one is busy */
+.fantino-pc-profile-trigger.fantino-pc-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Global overlay */
+.fantino-pc-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99998;
+    background: rgba(20, 22, 26, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.18s ease;
+    pointer-events: none;
+}
+.fantino-pc-overlay.is-visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+.fantino-pc-overlay__inner {
+    background: #fff;
+    color: #1d2327;
+    padding: 22px 28px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 90vw;
+}
+.fantino-pc-overlay__text {
+    line-height: 1.3;
+}
+.fantino-pc-spinner {
+    width: 22px;
+    height: 22px;
+    border: 3px solid #c7d2e0;
+    border-top-color: #2271b1;
+    border-radius: 50%;
+    animation: fantinoPcSpin 0.8s linear infinite;
+    flex-shrink: 0;
+}
+
+/* Custom icon uploaded via settings (replaces CSS spinner when set) */
+.fantino-pc-custom-icon {
+    width: 64px;
+    height: 64px;
+    max-width: 64px;
+    max-height: 64px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+@keyframes fantinoPcSpin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}

@@ -1,0 +1,101 @@
+/* Pack tab — nested slots + options editor */
+
+.mkl-pc-pack-slots-list {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.mkl-pc-pack-slot {
+	background: #fff;
+	border: 1px solid #d6d6d6;
+	border-radius: 6px;
+	padding: 10px 12px;
+}
+
+.mkl-pc-pack-slot-head {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.mkl-pc-pack-slot-handle {
+	cursor: grab;
+	color: #888;
+}
+
+.mkl-pc-pack-slot-label-wrap {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mkl-pc-pack-slot-label-text {
+	font-weight: 600;
+	font-size: 12px;
+	color: #555;
+	min-width: 80px;
+}
+
+.mkl-pc-pack-slot-label {
+	flex: 1;
+	max-width: 360px;
+}
+
+.mkl-pc-pack-slot-remove {
+	color: #a00;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.mkl-pc-pack-options-table {
+	margin: 0;
+}
+
+.mkl-pc-pack-options-table th,
+.mkl-pc-pack-options-table td {
+	padding: 6px 8px;
+	vertical-align: middle;
+}
+
+.mkl-pc-pack-options-table .col-handle { width: 22px; }
+.mkl-pc-pack-options-table .col-price { width: 110px; }
+.mkl-pc-pack-options-table .col-remove { width: 28px; text-align: center; }
+
+.mkl-pc-pack-option-handle {
+	cursor: grab;
+	color: #aaa;
+}
+
+.mkl-pc-pack-option-remove {
+	color: #a00;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.mkl-pc-pack-option-price {
+	width: 90px;
+	text-align: right;
+}
+
+.mkl-pc-pack-add-option-wrap {
+	display: flex;
+	gap: 8px;
+	margin-top: 10px;
+	align-items: center;
+}
+
+.mkl-pc-pack-add-option-select {
+	flex: 1;
+	max-width: 360px;
+}
+
+.mkl-pc-pack-slot.ui-sortable-helper,
+.mkl-pc-pack-option-row.ui-sortable-helper {
+	opacity: .8;
+	background: #fffbe6;
+}

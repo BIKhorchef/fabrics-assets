@@ -1,0 +1,541 @@
+/**
+ * Supplier Production Dashboard — Supplier Styles
+ */
+
+/* ── Layout ────────────────────────────────────────────── */
+.spd-wrap {
+    max-width: 1200px;
+    margin: 20px auto 40px;
+    padding: 0 20px;
+}
+
+.spd-page-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* ── Filters ───────────────────────────────────────────── */
+.spd-filters {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.spd-filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+}
+
+.spd-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.spd-filter-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.spd-filter-group select,
+.spd-filter-group input[type="text"],
+.spd-filter-group input[type="date"] {
+    min-width: 140px;
+    height: 32px;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.spd-filter-search input {
+    min-width: 180px;
+}
+
+.spd-filter-actions {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+/* ── Results summary ───────────────────────────────────── */
+.spd-results-summary {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    padding: 0 4px;
+}
+
+/* ── Orders table ──────────────────────────────────────── */
+.spd-table {
+    background: #fff;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.spd-table th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+}
+
+.spd-table td {
+    padding: 10px 12px;
+    font-size: 13px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+.spd-order-row {
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.spd-order-row:hover {
+    background-color: #f0f6fc !important;
+}
+
+.spd-order-row a {
+    font-weight: 600;
+    color: #2271b1;
+    text-decoration: none;
+}
+
+.spd-order-row a:hover {
+    text-decoration: underline;
+}
+
+.spd-col-number { width: 80px; }
+.spd-col-date   { width: 150px; }
+.spd-col-qty    { width: 50px; text-align: center; }
+.spd-col-total  { width: 90px; }
+
+/* ── Badges ────────────────────────────────────────────── */
+.spd-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.spd-wc-status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    background: #e0e0e0;
+    color: #333;
+}
+
+.spd-wc-status--processing { background: #c6e1c6; color: #2e4a2e; }
+.spd-wc-status--completed  { background: #c8d7e1; color: #2e4453; }
+.spd-wc-status--on-hold    { background: #f8dda7; color: #5b4a1e; }
+.spd-wc-status--pending    { background: #e5e5e5; color: #5b5b5b; }
+
+/* ── Pagination ────────────────────────────────────────── */
+.spd-pagination {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.spd-pagination .page-numbers {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #2271b1;
+    font-size: 13px;
+}
+
+.spd-pagination .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.spd-pagination .page-numbers:hover:not(.current) {
+    background: #f0f0f1;
+}
+
+/* ── No orders ─────────────────────────────────────────── */
+.spd-no-orders {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+    color: #666;
+}
+
+/* ── Order Detail ──────────────────────────────────────── */
+.spd-detail-header {
+    margin-bottom: 24px;
+}
+
+.spd-back-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #2271b1;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.spd-back-link:hover {
+    text-decoration: underline;
+}
+
+.spd-detail-title h1 {
+    display: inline;
+    margin-right: 12px;
+}
+
+.spd-detail-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    vertical-align: middle;
+}
+
+.spd-detail-date {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ── Sections ──────────────────────────────────────────── */
+.spd-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.spd-section h2 {
+    margin: 0 0 16px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.spd-section h2 small {
+    font-weight: 400;
+    color: #999;
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+/* ── Item Cards ────────────────────────────────────────── */
+.spd-item-card {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 12px;
+}
+
+.spd-item-card:last-child {
+    margin-bottom: 0;
+}
+
+.spd-item-layout {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.spd-item-thumbnail {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.spd-item-thumbnail img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+.spd-item-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.spd-item-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+a.spd-item-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2271b1;
+    text-decoration: none;
+}
+
+a.spd-item-name:hover {
+    text-decoration: underline;
+    color: #135e96;
+}
+
+.spd-item-name {
+    font-size: 15px;
+}
+
+.spd-item-sku,
+.spd-item-qty {
+    font-size: 13px;
+    color: #666;
+}
+
+.spd-item-variation {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* ── Customization table ───────────────────────────────── */
+.spd-item-customizations {
+    margin-top: 10px;
+}
+
+.spd-item-customizations > strong {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: #333;
+}
+
+.spd-customization-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spd-customization-table td {
+    padding: 4px 10px;
+    font-size: 13px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Per-child group header inside a pack (e.g. "Costume", "Chemise — Business"). */
+.spd-custom-group td {
+    padding: 8px 10px 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1d2327;
+    background: #f4f6f8;
+    border-bottom: 1px solid #dcdcde;
+    border-top: 1px solid #dcdcde;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+}
+
+.spd-customization-table tr:first-child.spd-custom-group td {
+    border-top: none;
+}
+
+/* Indent the layer rows that belong to a group for visual nesting. */
+.spd-custom-group ~ tr .spd-custom-label {
+    padding-left: 18px;
+}
+
+.spd-custom-label {
+    font-weight: 600;
+    color: #333;
+    width: 180px;
+    white-space: nowrap;
+}
+
+.spd-custom-value {
+    color: #555;
+}
+
+.spd-unmapped .spd-custom-label {
+    color: #b32d2e;
+    font-style: italic;
+}
+
+.spd-unmapped .spd-custom-label::after {
+    content: " *";
+    font-size: 11px;
+}
+
+.spd-no-customizations {
+    color: #999;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* ── View configuration link ───────────────────────────── */
+.spd-view-config {
+    margin-top: 10px;
+}
+
+.spd-view-config-link {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #2271b1;
+    border: 1px solid #2271b1;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+.spd-view-config-link:hover {
+    background: #2271b1;
+    color: #fff;
+}
+
+/* ── Production controls ───────────────────────────────── */
+.spd-production-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.spd-production-controls select {
+    min-width: 180px;
+    height: 34px;
+}
+
+.spd-status-timestamp {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #888;
+}
+
+/* ── Admin notes ───────────────────────────────────────── */
+.spd-admin-notes-section {
+    background: #fffbea;
+    border-color: #f0d68a;
+}
+
+.spd-admin-notes-content {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ── Supplier notes ────────────────────────────────────── */
+#spd-supplier-notes {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.spd-notes-actions {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ── Order total ───────────────────────────────────────── */
+.spd-order-total {
+    font-size: 15px;
+    padding: 14px 20px;
+}
+
+/* ── Feedback messages ─────────────────────────────────── */
+.spd-feedback {
+    font-size: 13px;
+    transition: opacity 0.3s;
+}
+
+.spd-feedback--success {
+    color: #00a32a;
+}
+
+.spd-feedback--error {
+    color: #d63638;
+}
+
+.spd-feedback--saving {
+    color: #666;
+}
+
+/* ── Responsive ────────────────────────────────────────── */
+@media screen and (max-width: 782px) {
+    .spd-filter-row {
+        flex-direction: column;
+    }
+
+    .spd-filter-group select,
+    .spd-filter-group input[type="text"],
+    .spd-filter-group input[type="date"] {
+        width: 100%;
+    }
+
+    .spd-table th,
+    .spd-table td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .spd-col-date { display: none; }
+
+    .spd-item-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .spd-item-layout {
+        flex-direction: column;
+    }
+
+    .spd-item-thumbnail {
+        width: 60px;
+        height: 60px;
+    }
+
+    .spd-item-thumbnail img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .spd-production-controls {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .spd-detail-title h1 {
+        display: block;
+    }
+
+    .spd-detail-meta {
+        display: flex;
+        margin-top: 8px;
+    }
+}
