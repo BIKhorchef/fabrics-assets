@@ -1,13 +1,13 @@
 <?php
 
 /**
-* Plugin Name: Product Configurator — BIGHOUSEMARKETING Edition
-* Plugin URI: https://www.bighousemarketing.lu/
-* Description: Allow customers to configure and customize their products using a live preview powered by a system of layers. Customised and extended by BEN BIGHOUSEMARKETING from the original free release by Marc Lacroix.
-* Author: BEN BIGHOUSEMARKETING
-* Author URI: https://www.bighousemarketing.lu/
+* Plugin Name: Product Configurator — Khorchef Edition
+* Plugin URI: https://github.com/BIKhorchef/
+* Description: Allow customers to configure and customize their products using a live preview powered by a system of layers. Customised and extended by Badr Khorchef from the original free release by Marc Lacroix.
+* Author: Badr Khorchef
+* Author URI: https://github.com/BIKhorchef/
 * Version: 1.5.10-bh.1
-* Update URI: https://www.bighousemarketing.lu/plugins/product-configurator-bh/
+* Update URI: https://github.com/BIKhorchef/
 * Requires PHP: 7.4
 * WC requires at least: 8
 * WC tested up to: 10
@@ -17,7 +17,7 @@
 *
 * Original plugin: Product Configurator for WooCommerce by Marc Lacroix (http://wc-product-configurator.com)
 * Copyright: © 2015 mklacroix
-* Modifications: © BEN BIGHOUSEMARKETING (https://www.bighousemarketing.lu/)
+* Modifications: © 2026 Badr Khorchef (https://github.com/BIKhorchef/)
 * License: GNU General Public License v3.0
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
@@ -115,7 +115,7 @@ add_action( 'before_woocommerce_init', function() {
  * line of defence: it strips this plugin out of the update_plugins
  * site transient if anything ever puts it back, so the WP admin
  * never shows an "Update available" banner that would let an
- * unsuspecting admin overwrite the BIGHOUSEMARKETING customisations
+ * unsuspecting admin overwrite this fork's customisations
  * with the upstream Marc Lacroix release.
  */
 add_filter( 'site_transient_update_plugins', 'mkl_pc_bh_block_wp_org_update', 99 );

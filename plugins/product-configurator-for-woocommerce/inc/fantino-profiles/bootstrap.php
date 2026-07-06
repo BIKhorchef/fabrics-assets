@@ -5,7 +5,7 @@
  * Adds a per-product "Configurator Profiles" meta box on the WooCommerce
  * product edit screen. Storage only (no frontend filtering yet — Phase 1+2).
  *
- * Lives inside Product Configurator for WooCommerce (BIGHOUSEMARKETING Edition)
+ * Lives inside Product Configurator for WooCommerce (Khorchef Edition)
  * to avoid running a second standalone plugin.
  *
  * Storage meta key: _fantino_configurator_profiles

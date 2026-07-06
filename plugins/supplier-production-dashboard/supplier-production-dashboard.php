@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Supplier Production Dashboard
- * Plugin URI:  https://www.bighousemarketing.lu/
+ * Plugin URI:  https://github.com/BIKhorchef/
  * Description: A private production dashboard for suppliers — shows sanitized WooCommerce order data without any customer PII.
  * Version:     1.1.0
- * Author:      BEN BIG HOUSE MARKETING
- * Author URI:  https://www.bighousemarketing.lu/
+ * Author:      Badr Khorchef
+ * Author URI:  https://github.com/BIKhorchef/
  * License:     GPL-2.0-or-later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: supplier-production-dashboard
